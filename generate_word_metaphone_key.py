@@ -2,6 +2,16 @@ import json
 from doublemetaphone import doublemetaphone
 
 def generate_metaphone_keys(input_file, output_dict_file, output_key_file):
+    """
+    登録されている単語のリストを受け取り、metaphone_keyだけのリストと、キーがmetaphone_key、バリューが登録された単語となる辞書型のリストを生成します。
+
+    Args:
+        arg1: 登録されている単語のファイル名
+        arg2: 生成する辞書型のリストのファイル名
+        arg3: 生成するmetaphone_keyのリストのファイル名
+
+    Returns:
+    """
 
     # 入力ファイルを読み込む
     with open(input_file, 'r', encoding='utf-8') as f:
