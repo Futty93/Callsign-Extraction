@@ -21,6 +21,9 @@ def replace_with_closest_words(words):
 
     # 各単語に対してループを実行し、最も近い単語に置き換える
     for word in words:
+        if word.isdigit():
+            replaced_words.append(word)
+            continue
         min_distance = float('inf')
         closest_word = word
 
@@ -31,6 +34,9 @@ def replace_with_closest_words(words):
                 min_distance = d
                 closest_word = metaphone_key_word
 
-        replaced_words.append(closest_word)
+        if len(word)*2/3 > min_distance:
+            replaced_words.append([closest_word, min_distance])
+        else:
+            replaced_words.append(word)
 
     return replaced_words
