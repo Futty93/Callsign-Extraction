@@ -47,4 +47,6 @@ class G2PClass:
 
         return g2p_word_list
 
-print(G2PClass().generate_g2p_list("I refuse to collect the refuse around her"))
+
+if __name__ == '__main__':
+    print(G2PClass().generate_g2p_list("I refuse to collect the refuse around here"))
