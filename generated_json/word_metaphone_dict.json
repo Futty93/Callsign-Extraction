@@ -1,7 +1,7 @@
 {
     "AL": "all",
     "NPN": "nippon",
-    "ALNPN": "al nippon",
+    "ALNPN": "all nippon",
     "NNR": "niner",
     "JPN": "japan",
     "AR": "air",
@@ -9,6 +9,8 @@
     "PK": "peach",
     "ARPK": "air peach",
     "SKMRK": "skymark",
+    "STRFLR": "starflyer",
+    "APKS": "ibex",
     "ANT": "and",
     "MNTN": "maintain"
 }
