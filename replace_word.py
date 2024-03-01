@@ -3,7 +3,7 @@ from Levenshtein import distance
 from g2p_metaphone_gen import G2PClass, MetaphoneClass
 
 class WordReplaceClass:
-    def replace_words_spell(sentence: str):
+    def replace_words_spell(sentence: str) -> list:
         """
         与えられた整形済みの文章を単語ごとに区切り、スペルを元に距離を計算し
         登録されている近い単語に置き換える・
@@ -50,7 +50,7 @@ class WordReplaceClass:
         return replaced_words
 
 
-    def replace_words_metaphone(word_list: list[str]):
+    def replace_words_metaphone(word_list: list[str]) -> list:
         """
         与えられた単語のmetaphone keyの配列に対して、./generated_json/word_metaphone_key.jsonに登録されている
         単語との距離を計算し、最も近い単語に置き換える。
@@ -95,7 +95,7 @@ class WordReplaceClass:
 
         return replaced_words
 
-    def replace_words_g2p(word_list: list[str]):
+    def replace_words_g2p(word_list: list[str]) -> list:
         """
         与えられたg2p化された単語の配列に対してそれぞれ登録されている単語のg2pと距離を計算し、最も近い単語に置き換えた配列を返す
 
@@ -139,7 +139,7 @@ class WordReplaceClass:
 
 
 if __name__ == '__main__':
-    sentence: str = "Borneepong 567 Kwa Sulan Way 24L contact ground on the other side"
+    sentence: str = "Morningphone 133 Hold position Traffic from final approach"
     print(WordReplaceClass.replace_words_spell(sentence))
     print(WordReplaceClass.replace_words_g2p(G2PClass().generate_g2p_list(sentence)))
     print(WordReplaceClass.replace_words_metaphone(MetaphoneClass().generate_metaphone_key_list(sentence)))
