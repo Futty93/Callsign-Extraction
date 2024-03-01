@@ -62,13 +62,13 @@ class Restoration():
         i: int = 0
         while i < len(word_list) - 1:
             joined_word = word_list[i] + " " + word_list[i + 1]
-            if word_list[i] in data:
+            if word_list[i] in data:    # 1単語で辞書に登録されている部分があれば変換する
                 restored_sentence.append(data[word_list[i]])
                 i += 1
-            elif joined_word in data:
+            elif joined_word in data:   # 連続する2単語で辞書に登録されている場合はまとめて置き換える
                 restored_sentence.append(data[joined_word])
                 i += 2  # i を1回飛ばす
-            else:
+            else:                       # 登録されているものがない場合はそのままのものを返す
                 restored_sentence.append(word_list[i])
                 i += 1
 

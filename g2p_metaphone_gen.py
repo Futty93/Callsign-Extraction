@@ -75,6 +75,6 @@ class MetaphoneClass:
 
 
 if __name__ == '__main__':
-    sentence: str = "Borneepong 567 Kwa Sulan Way 24L contact ground on the other side"
+    sentence: str = "Morningphone 133 Hold position Traffic from final approach"
     print(G2PClass().generate_g2p_list(sentence))
     print(MetaphoneClass().generate_metaphone_key_list(sentence))
