@@ -75,23 +75,23 @@ class WordReplaceClass:
 
         # 各単語に対してループを実行し、最も近い単語に置き換える
         for word in word_list:
-            if word.isdigit():
+            if isinstance(word, list) == False:
                 replaced_words.append(word)
                 continue
             min_distance = float('inf')
-            closest_word = word
+            closest_word = word[0]
 
             # 単語のメタフォンキーに対応する単語との距離を計算し、最小距離を見つける
             for metaphone_key_word in register_metaphone_list:
-                d = distance(word, metaphone_key_word)
+                d = distance(word[0], metaphone_key_word)
                 if d < min_distance:
                     min_distance = d
                     closest_word = metaphone_key_word
 
-            if len(word)*2/3 > min_distance:
-                replaced_words.append([closest_word, min_distance])
+            if len(word[0])*2/3 > min_distance:
+                replaced_words.append([closest_word, word[1]])
             else:
-                replaced_words.append(word)
+                replaced_words.append(word[1])
 
         return replaced_words
 
@@ -117,23 +117,23 @@ class WordReplaceClass:
         replaced_words: list[str] = []
         # 各単語に対してループを実行し、最も近い単語に置き換える
         for word in word_list:
-            if word.isdigit():
+            if isinstance(word, list) == False:
                 replaced_words.append(word)
                 continue
             min_distance = float('inf')
-            closest_word = word
+            closest_word = word[0]
 
             # 単語のメタフォンキーに対応する単語との距離を計算し、最小距離を見つける
             for g2p_word in register_g2p_list:
-                d = distance(word, g2p_word)
+                d = distance(word[0], g2p_word)
                 if d < min_distance:
                     min_distance = d
                     closest_word = g2p_word
 
-            if len(word)*2/3 > min_distance:
-                replaced_words.append([closest_word, min_distance])
+            if len(word[0])*3/5 > min_distance:
+                replaced_words.append([closest_word, word[1]])
             else:
-                replaced_words.append(word)
+                replaced_words.append(word[1])
 
         return replaced_words
 

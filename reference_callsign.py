@@ -22,7 +22,7 @@ if __name__ == "__main__":
     extractor = Extractor()
 
     # テスト用の文章
-    sample_text = "This is a sample text with patterns like AAA 123, BBB 4567, and CC 78901."
+    sample_text = "ANA 133 Hold position Traffic from final approach"
 
     # パターンを抽出
     extracted_patterns = extractor.extract_pattern(sample_text)

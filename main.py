@@ -1,6 +1,6 @@
 from sentenceFormat import SentenceFormatter
 from g2p_metaphone_gen  import G2PClass, MetaphoneClass
-from replace_word import WordReplaceClass
+from word_replace import WordReplaceClass
 from restoration_sentence import Restoration
 from reference_callsign import Extractor
 
@@ -38,10 +38,10 @@ def process_extract_callsign(sentence, processing_type):
     
 
     # 単語の復元
-    restoration_sentence = Restoration.restoration_sentence(replaced_array, processing_type)
+    restoration_sentence = Restoration().restoration_sentence(replaced_array, processing_type)
 
     # コールサインの抽出
-    restoration_callsign = Restoration.restoration_callSign(restoration_sentence)
+    restoration_callsign = Restoration().restoration_callSign(restoration_sentence)
     callsign = Extractor().extract_pattern(restoration_callsign)
 
     return callsign
@@ -61,7 +61,7 @@ def main():
             restoration_sentence.append(word)
 
     restoration_sentence = ' '.join(restoration_sentence)
-    restoration_callsign = Restoration.restoration_callSign(restoration_sentence)
+    restoration_callsign = Restoration().restoration_callSign(restoration_sentence)
     callsign = Extractor().extract_pattern(restoration_callsign)
 
     if callsign:
