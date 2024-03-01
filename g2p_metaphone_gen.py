@@ -34,7 +34,7 @@ class G2PClass:
 
         Return
         ----------
-        word_g2p_list: list[str]
+        word_g2p_list: list[str, str]
             文章の単語ごとにg2pに変換し、リストを返す
         """
         word_list = sentence.split()
@@ -44,13 +44,13 @@ class G2PClass:
             if word.isdigit():
                 word_g2p_list.append(word)
             else:
-                word_g2p_list.append(self.generate_g2p(word))
+                word_g2p_list.append([self.generate_g2p(word), word])
 
         return word_g2p_list
     
 class MetaphoneClass:
 
-    def generate_metaphone_key_list(self, sentence: str):
+    def generate_metaphone_key_list(self, sentence: str) -> list[str]:
         """
         Parameters
         ----------
@@ -59,7 +59,7 @@ class MetaphoneClass:
 
         Return
         ----------
-        word_metaphone_key_list: list[str]
+        word_metaphone_key_list: list[str, str]
             文章の単語ごとにmetaphone keyに変換し、リストを返す
         """
         word_list = sentence.split()
@@ -69,12 +69,12 @@ class MetaphoneClass:
             if word.isdigit():
                 word_metaphone_key_list.append(word)
             else:
-                word_metaphone_key_list.append(doublemetaphone(word)[0])
+                word_metaphone_key_list.append([doublemetaphone(word)[0], word])
 
         return word_metaphone_key_list
 
 
 if __name__ == '__main__':
-    sentence: str = "Morningphone 133 Hold position Traffic from final approach"
+    sentence: str = "Morning phone 133 Hold position Traffic from final approach"
     print(G2PClass().generate_g2p_list(sentence))
     print(MetaphoneClass().generate_metaphone_key_list(sentence))
