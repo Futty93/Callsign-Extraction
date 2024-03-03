@@ -130,7 +130,7 @@ class WordReplaceClass:
                     min_distance = d
                     closest_word = g2p_word
 
-            if len(word[0])*3/5 > min_distance:
+            if len(word[0])*2/3 > min_distance:
                 replaced_words.append([closest_word, word[1]])
             else:
                 replaced_words.append(word[1])
@@ -139,7 +139,7 @@ class WordReplaceClass:
 
 
 if __name__ == '__main__':
-    sentence: str = "Morningphone 133 Hold position Traffic from final approach"
+    sentence: str = "Morningphone 133 positionTraffic fromfinal"
     print(WordReplaceClass.replace_words_spell(sentence))
     print(WordReplaceClass.replace_words_g2p(G2PClass().generate_g2p_list(sentence)))
     print(WordReplaceClass.replace_words_metaphone(MetaphoneClass().generate_metaphone_key_list(sentence)))

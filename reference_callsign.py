@@ -4,7 +4,19 @@ class Extractor:
     def __init__(self):
         pass
 
-    def extract_pattern(self, sentence):
+    def extract_pattern(self, sentence: str) -> list:
+        """
+        受け取った文章から正規表現に一致する部分を抽出する
+        Parameter
+        ---
+            sentence: str
+                便名などを3レターに置き換えた後の文章を受け取る
+        Return
+        ---
+            extracted_patterns: list
+                正規表現に一致した部分を全て抜き出し、配列として返す。
+                1つも見つからなかった場合はFalseを返す。
+        """
         pattern = r'\b([A-Z]{3})\s(\d+)\b'  # AAA 111 のパターン
         matches = re.findall(pattern, sentence)
         if matches:

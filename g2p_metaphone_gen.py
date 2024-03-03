@@ -75,6 +75,6 @@ class MetaphoneClass:
 
 
 if __name__ == '__main__':
-    sentence: str = "Morning phone 133 Hold position Traffic from final approach"
+    sentence: str = "Morningphone 133 positionTraffic fromfinal"
     print(G2PClass().generate_g2p_list(sentence))
     print(MetaphoneClass().generate_metaphone_key_list(sentence))
