@@ -4,7 +4,67 @@ class SentenceFormatter:
     def __init__(self):
         pass
 
-    def format_sentence(self, text):
+    def insert_space_before_number(self, word: str) -> str:
+        """
+        単語内に数字が登場する場合、初めて数字が出現したとき、その前に半角スペースを挿入する関数
+
+        Parameters
+        ---
+            word: str
+                数字が含まれる可能性のある単語
+
+        Returns
+        ---
+            result: str
+                数字の前に半角スペースが挿入された単語
+        """
+        if word.isdigit():
+            return word
+
+        result = ''
+        digit_found = False
+        for char in word:
+            if char.isdigit() and not digit_found:
+                result += ' ' + char
+                digit_found = True
+            else:
+                result += char
+        return result
+
+    def extract_number(self, word: str) -> str:
+        """
+        引数として与えられた文字列から数字から始まる部分を抽出する関数
+
+        Parameters
+        ---
+            word: str
+                数字から始まる部分を抽出する対象の文字列
+
+        Returns
+        ---
+            str
+                数字から始まる部分の文字列、または元の文字列
+        """
+        # 最初の文字が数字であるかどうかをチェック
+        if word and not word[0].isdigit():
+            return word
+
+        # 数字以外の文字が出現するまでの部分を抽出
+        extracted_number = ''
+        for char in word:
+            if char.isdigit():
+                extracted_number += char
+            else:
+                pass
+
+        # 数字のみで構成されているかどうかをチェック
+        if extracted_number.isdigit():
+            return extracted_number
+        else:
+            # 数字以外の文字を削除した文字列を返す
+            return ''.join([char for char in extracted_number if char.isdigit()])
+
+    def format_sentence(self, text: str) -> str:
         """
         文章のフォーマットを行います。
 
@@ -25,6 +85,15 @@ class SentenceFormatter:
 
         # パターンにマッチする箇所を探し、間のスペースを削除する
         modified_text = re.sub(pattern, r'\1\2', text)
+
+        modified_text_list = modified_text.split()
+
+        # 単語と数字が1つのまとまりとして文字起こしされた場合に、単語と数字を分割する
+        for i in range(len(modified_text_list)):
+            modified_text_list[i] = self.extract_number(modified_text_list[i])
+            modified_text_list[i] = self.insert_space_before_number(modified_text_list[i])
+        
+        modified_text = ' '.join(modified_text_list)
 
         # もし修正されたテキストにパターンにマッチする部分があれば再度関数を呼び出す
         if modified_text != text:
@@ -84,7 +153,7 @@ if __name__ == "__main__":
     formatter = SentenceFormatter()
 
     # テスト用の文章
-    sample_text = "Morning phone 133 Hold position Traffic from final approach"
+    sample_text = "Japania345C, Long way 3-2, cleared for departure."
 
     # テキストのフォーマット
     formatted_text = formatter.format_sentence(sample_text)
@@ -92,4 +161,10 @@ if __name__ == "__main__":
     # フォーマットされたテキストの表示
     print("Formatted text:", formatted_text)
 
-    print(SentenceFormatter().word_combination_formatter(sample_text))
+    print(SentenceFormatter().word_combination_formatter(formatted_text))
+
+    # print(SentenceFormatter().insert_space_before_number("Starfire12C3"))
+    # print(SentenceFormatter().insert_space_before_number("Japania345R"))
+    # print(SentenceFormatter().insert_space_before_number("MorningPhone"))
+
+    # print(SentenceFormatter().extract_number("345C"))

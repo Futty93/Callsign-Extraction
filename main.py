@@ -97,5 +97,5 @@ def main(input_text: str):
     return
 
 if __name__ == '__main__':
-    input_text: str = "Morning phone 1.3.3 Hold position. Traffic from final approach"
+    input_text: str = "5x456 Hold position. Traffic on final"
     main(input_text)
