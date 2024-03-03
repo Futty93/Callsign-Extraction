@@ -87,13 +87,13 @@ class Restoration():
             joined_word = word + " " + next_word
 
             if word in data:    # 1単語で辞書に登録されている部分があれば変換する
-                if word_list[i+1].isdigit():
+                if word_list[i+1][0].isdigit():
                     restored_sentence.append(data[word])
                 else:
                     restored_sentence.append(self.get_second_element(word_list[i]))
                 i += 1
             elif joined_word in data:   # 連続する2単語で辞書に登録されている場合はまとめて置き換える
-                if word_list[i+2].isdigit():
+                if word_list[i+2][0].isdigit():
                     restored_sentence.append(data[joined_word])
                     i += 2
                 else:

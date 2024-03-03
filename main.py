@@ -47,8 +47,7 @@ def process_extract_callsign(sentence, processing_type):
     return callsign
 
 
-def main():
-    input_text = "Morning phone 1.3.3 Hold position. Traffic from final approach"
+def main(input_text: str):
     formated_text = SentenceFormatter().format_sentence(input_text)
 
     replaced_array = WordReplaceClass.replace_words_spell(formated_text)
@@ -98,4 +97,5 @@ def main():
     return
 
 if __name__ == '__main__':
-    main()
+    input_text: str = "Morning phone 1.3.3 Hold position. Traffic from final approach"
+    main(input_text)
