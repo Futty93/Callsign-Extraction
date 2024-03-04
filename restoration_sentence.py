@@ -87,7 +87,7 @@ class Restoration():
             joined_word = word + " " + next_word
 
             if word in data:    # 1単語で辞書に登録されている部分があれば変換する
-                if word_list[i+1][0].isdigit():
+                if i + 1 < len(word_list) and word_list[i+1][0].isdigit():
                     restored_sentence.append(data[word])
                 else:
                     restored_sentence.append(self.get_second_element(word_list[i]))
