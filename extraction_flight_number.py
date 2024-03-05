@@ -47,7 +47,7 @@ def process_extract_callsign(sentence, processing_type):
     return callsign
 
 
-def main(input_text: str):
+def extraction_flight_number(input_text: str) -> str:
     formated_text = SentenceFormatter().format_sentence(input_text)
 
     replaced_array = WordReplaceClass.replace_words_spell(formated_text)
@@ -64,16 +64,19 @@ def main(input_text: str):
     callsign = Extractor().extract_pattern(restoration_callsign)
 
     if callsign:
-        print(callsign)
-        return
+        # print(callsign)
+        return callsign
 
     callsign_metaphone = process_extract_callsign(formated_text, "metaphone")
     callsign_g2p = process_extract_callsign(formated_text, "g2p")
 
     if callsign_metaphone or callsign_g2p:
-        print(callsign_metaphone)
-        print(callsign_g2p)
-        return
+        if callsign_metaphone:
+            # print(callsign_metaphone)
+            return callsign_metaphone
+        if callsign_g2p:
+            # print(callsign_g2p)
+            return callsign_g2p
 
     extra_formated_text = SentenceFormatter().word_combination_formatter(formated_text)
 
@@ -84,18 +87,23 @@ def main(input_text: str):
 
     if callsign_metaphone_1 or callsign_metaphone_2 or callsign_g2p_1 or callsign_g2p_2:
         if callsign_metaphone_1:
-            print(callsign_metaphone_1)
+            # print(callsign_metaphone_1)
+            return callsign_metaphone_1
         if callsign_metaphone_2:
-            print(callsign_metaphone_2)
+            # print(callsign_metaphone_2)
+            return callsign_metaphone_2
         if callsign_g2p_1:
-            print(callsign_g2p_1)
+            # print(callsign_g2p_1)
+            return callsign_g2p_1
         if callsign_g2p_2:
-            print(callsign_g2p_2)
+            # print(callsign_g2p_2)
+            return callsign_g2p_2
     else:
-        print("Callsign not Found")
+        # print("Callsign not Found")
+        return "Callsign is not Found"
 
-    return
+    return False
 
 if __name__ == '__main__':
     input_text: str = "5x456 Hold position. Traffic on final"
-    main(input_text)
+    extraction_flight_number(input_text)

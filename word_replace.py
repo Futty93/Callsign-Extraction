@@ -140,6 +140,8 @@ class WordReplaceClass:
 
 if __name__ == '__main__':
     sentence: str = "Morningphone 133 positionTraffic fromfinal"
-    print(WordReplaceClass.replace_words_spell(sentence))
-    print(WordReplaceClass.replace_words_g2p(G2PClass().generate_g2p_list(sentence)))
-    print(WordReplaceClass.replace_words_metaphone(MetaphoneClass().generate_metaphone_key_list(sentence)))
+    # print(WordReplaceClass.replace_words_spell(sentence))
+    # print(WordReplaceClass.replace_words_g2p(G2PClass().generate_g2p_list(sentence)))
+    # print(WordReplaceClass.replace_words_metaphone(MetaphoneClass().generate_metaphone_key_list(sentence)))
+    
+    print(WordReplaceClass.replace_words_g2p([["JHAH0PAE1NYAH0", "japania"]]))

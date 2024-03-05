@@ -1,0 +1,3402 @@
+[
+    {
+        "text": "ANA123, runway 25L, cleared for takeoff.",
+        "sound-file": "soundFile000.m4a",
+        "transcript-result": "Hold Nippon 123, now wait 25 left, clear for takeoff."
+    },
+    {
+        "text": "JAL567, runway 18R, cleared for departure.",
+        "sound-file": "soundFile001.m4a",
+        "transcript-result": "Japan Air 567, Longwave 18L, create full departure."
+    },
+    {
+        "text": "APJ890, runway 29, cleared for takeoff.",
+        "sound-file": "soundFile002.m4a",
+        "transcript-result": "AirPitch 890, long way to 9/9, cleared for takeoff."
+    },
+    {
+        "text": "IBX456, runway 34, cleared for departure.",
+        "sound-file": "soundFile003.m4a",
+        "transcript-result": "IMAX 456, long way 3-4, cleared for departure."
+    },
+    {
+        "text": "SFJ789, runway 09, cleared for takeoff.",
+        "sound-file": "soundFile004.m4a",
+        "transcript-result": "Starflyer 789R, Longwave 090, cleared for takeoff."
+    },
+    {
+        "text": "SKY234, runway 27L, cleared for departure.",
+        "sound-file": "soundFile005.m4a",
+        "transcript-result": "Skymark 234 Long way 27 left, cleared for departure."
+    },
+    {
+        "text": "ANA890, runway 16R, cleared for takeoff.",
+        "sound-file": "soundFile006.m4a",
+        "transcript-result": "All Nipon 890, long way 16 right. Create for takeoff."
+    },
+    {
+        "text": "JAL345, runway 32, cleared for departure.",
+        "sound-file": "soundFile007.m4a",
+        "transcript-result": "Japania345, Long way 3-2, cleared for departure."
+    },
+    {
+        "text": "APJ678, runway 21L, cleared for takeoff.",
+        "sound-file": "soundFile008.m4a",
+        "transcript-result": "AirPitch 678, runway 21L cleared for takeoff."
+    },
+    {
+        "text": "IBX901, runway 14R, cleared for departure.",
+        "sound-file": "soundFile009.m4a",
+        "transcript-result": "IPEX9901, long way 1-4 light, cleared for departure."
+    },
+    {
+        "text": "IBX456, hold position, traffic on final.",
+        "sound-file": "soundFile010.m4a",
+        "transcript-result": "5x456 Hold position. Traffic on final."
+    },
+    {
+        "text": "SFJ789, reduce speed to 180 knots, traffic ahead.",
+        "sound-file": "soundFile011.m4a",
+        "transcript-result": "Starfire 789, reduce speed to 180 not, traffic ahead."
+    },
+    {
+        "text": "SKY234, turn heading 27, vectors for spacing.",
+        "sound-file": "soundFile012.m4a",
+        "transcript-result": "Skymark 234, down heading 27, vector 4 spacing."
+    },
+    {
+        "text": "ANA890, runway 16R, cleared to land.",
+        "sound-file": "soundFile013.m4a",
+        "transcript-result": "All Nippon 890, Longwave on 6th slide, cleared to land."
+    },
+    {
+        "text": "JAL345, cross runway 32, contact ground on the other side.",
+        "sound-file": "soundFile014.m4a",
+        "transcript-result": "Japanese S345, close-down S342, contact ground on the other side."
+    },
+    {
+        "text": "APJ678, descend and maintain 3000 feet, cleared for approach.",
+        "sound-file": "soundFile015.m4a",
+        "transcript-result": "Air pitch 678, descend and maintain 3000 feet. Create for uploads."
+    },
+    {
+        "text": "IBX901, go around, traffic on runway, climb to 4000 feet.",
+        "sound-file": "soundFile016.m4a",
+        "transcript-result": "Ivex 9901, go around, traffic on long way, climb to 4000 feet."
+    },
+    {
+        "text": "ANA246, turn right heading 180, vectors for spacing.",
+        "sound-file": "soundFile017.m4a",
+        "transcript-result": "All Nippon 246, down right heading 180, vector 4 spacing, 4 spacing."
+    },
+    {
+        "text": "JAL789, runway 27L, cleared for takeoff.",
+        "sound-file": "soundFile018.m4a",
+        "transcript-result": "Japan Air 789R long way 27L cleared for takeoff"
+    },
+    {
+        "text": "APJ543, hold position, traffic on final approach.",
+        "sound-file": "soundFile019.m4a",
+        "transcript-result": "AirPitch 543, hold position, traffic on final, upload."
+    },
+    {
+        "text": "IBX678, reduce speed to 180 knots, maintain current heading.",
+        "sound-file": "soundFile020.m4a",
+        "transcript-result": "HIVEX 678, reduce speed to 1.8070. Maintain current heading."
+    },
+    {
+        "text": "SFJ901, turn left heading 330, vectors for approach.",
+        "sound-file": "soundFile021.m4a",
+        "transcript-result": "Starflyer 901, down left heading 330, Victor 4, approach."
+    },
+    {
+        "text": "SKY345, descend and maintain 6000 feet, cleared for approach.",
+        "sound-file": "soundFile022.m4a",
+        "transcript-result": "Skymark 345, descend and maintain 6000 feet. Create for upload."
+    },
+    {
+        "text": "ANA567, cross runway 25R, contact ground on the other side.",
+        "sound-file": "soundFile023.m4a",
+        "transcript-result": "Borneepong 567, Kwa-Sulan Way 24L, contact ground on the other side."
+    },
+    {
+        "text": "JAL890, go around, traffic on runway, climb to 5000 feet.",
+        "sound-file": "soundFile024.m4a",
+        "transcript-result": "Japan Air 890, Goa Land, Traffic on Long Way, climb to 5000 feet."
+    },
+    {
+        "text": "APJ123, runway 32R, cleared for takeoff.",
+        "sound-file": "soundFile025.m4a",
+        "transcript-result": "AirPitch 1 to 3, now switch to light, cleared for takeoff"
+    },
+    {
+        "text": "IBX234, hold short of runway 09, traffic on final.",
+        "sound-file": "soundFile026.m4a",
+        "transcript-result": "IMAX234 Hold short of language airliner. Traffic confiner."
+    },
+    {
+        "text": "SFJ456, turn left heading 270, vectors for spacing.",
+        "sound-file": "soundFile027.m4a",
+        "transcript-result": "Start flyer 456, down left heading 270, vector 4 spacing."
+    },
+    {
+        "text": "SKY567, runway 34L, cleared for takeoff.",
+        "sound-file": "soundFile028.m4a",
+        "transcript-result": "Skymunk 567, Nounway 34L, cleared for takeoff."
+    },
+    {
+        "text": "ANA789, hold position, traffic crossing runway.",
+        "sound-file": "soundFile029.m4a",
+        "transcript-result": "Hold the phone 789R. Hold the position. Traffic crossing runway."
+    },
+    {
+        "text": "JAL901, reduce speed to 220 knots, traffic ahead.",
+        "sound-file": "soundFile030.m4a",
+        "transcript-result": "Japania 901, reduce speed to 2200, traffic ahead."
+    },
+    {
+        "text": "APJ234, turn right heading 090, vectors for final approach.",
+        "sound-file": "soundFile031.m4a",
+        "transcript-result": "AirPitch 234, down right heading 090, picked up for final approach."
+    },
+    {
+        "text": "IBX678, descend and maintain 4000 feet, cleared for approach.",
+        "sound-file": "soundFile032.m4a",
+        "transcript-result": "IBEC 678, descend and maintain 4000ft. Clear for uploads."
+    },
+    {
+        "text": "SFJ890, cross runway 16L, contact ground on the other side.",
+        "sound-file": "soundFile033.m4a",
+        "transcript-result": "Star Flyer 8990, course number 16 net, contact grant on the other side"
+    },
+    {
+        "text": "SKY123, go around, traffic on runway, climb to 6000 feet.",
+        "sound-file": "soundFile034.m4a",
+        "transcript-result": "Skymark 123 go-along traffic on long way crime to 6000 feet"
+    },
+    {
+        "text": "ANA456, runway 27R, cleared for departure.",
+        "sound-file": "soundFile035.m4a",
+        "transcript-result": "Bologna PON 456, language 27R. Create for departure."
+    },
+    {
+        "text": "JAL678, hold short of runway 18R, traffic on final.",
+        "sound-file": "soundFile036.m4a",
+        "transcript-result": "Japan Air 678, hold short of runway 18B, traffic confinal."
+    },
+    {
+        "text": "APJ901, turn left heading 180, vectors for spacing.",
+        "sound-file": "soundFile037.m4a",
+        "transcript-result": "AirPitch 9-1-1, down left heading 1-8-0, vector for spacing."
+    },
+    {
+        "text": "IBX234, runway 21R, cleared for takeoff.",
+        "sound-file": "soundFile038.m4a",
+        "transcript-result": "Ibex234, number 21R, create for take-off"
+    },
+    {
+        "text": "SFJ567, hold position, traffic on final approach.",
+        "sound-file": "soundFile039.m4a",
+        "transcript-result": "Star Player 567, hold position. Traffic Confinal, upload."
+    },
+    {
+        "text": "SKY789, reduce speed to 160 knots, maintain current heading.",
+        "sound-file": "soundFile040.m4a",
+        "transcript-result": "Skymark 789R, reduce speed to 1600, maintain current heading."
+    },
+    {
+        "text": "ANA901, turn right heading 330, vectors for approach.",
+        "sound-file": "soundFile041.m4a",
+        "transcript-result": "All Nippon 901 turn right heading 3-3-0, Victor 4 approach."
+    },
+    {
+        "text": "JAL234, descend and maintain 7000 feet, cleared for approach.",
+        "sound-file": "soundFile042.m4a",
+        "transcript-result": "Japan Rail 234. Descent and maintain 7000 feet. cleared for uploads."
+    },
+    {
+        "text": "APJ567, cross runway 32L, contact ground on the other side.",
+        "sound-file": "soundFile043.m4a",
+        "transcript-result": "Air pitch 567, cross-lumber seats left, contact ground on the other side."
+    },
+    {
+        "text": "IBX890, go around, traffic on runway, climb to 7000 feet.",
+        "sound-file": "soundFile044.m4a",
+        "transcript-result": "Ivex 8990. Go alone. Traffic on long way.  Climb to 7000 feet."
+    },
+    {
+        "text": "SFJ123, runway 25L, cleared for takeoff.",
+        "sound-file": "soundFile045.m4a",
+        "transcript-result": "Starfire123, number 2 folder, create for take off"
+    },
+    {
+        "text": "SKY456, hold short of runway 34R, traffic on final.",
+        "sound-file": "soundFile046.m4a",
+        "transcript-result": "Skymark 456, hold short of non-way 3-4-right. Traffic Confinal."
+    },
+    {
+        "text": "ANA678, turn left heading 270, vectors for spacing.",
+        "sound-file": "soundFile047.m4a",
+        "transcript-result": "All new phone 378, turn left heading 270, vector for spacing."
+    },
+    {
+        "text": "JAL901, runway 18L, cleared for takeoff.",
+        "sound-file": "soundFile048.m4a",
+        "transcript-result": "Japan Air 901, runway 18B, cleared for takeoff."
+    },
+    {
+        "text": "APJ234, hold position, traffic crossing runway.",
+        "sound-file": "soundFile049.m4a",
+        "transcript-result": "AirPitch 234, hold position, traffic crossing runway."
+    },
+    {
+        "text": "IBX567, reduce speed to 190 knots, traffic ahead.",
+        "sound-file": "soundFile050.m4a",
+        "transcript-result": "IBEX 567, radio speed to 9900, traffic ahead."
+    },
+    {
+        "text": "SFJ890, turn right heading 090, vectors for final approach.",
+        "sound-file": "soundFile051.m4a",
+        "transcript-result": "Staff layer 8910, town right heading 090, vector for final approach."
+    },
+    {
+        "text": "SKY123, descend and maintain 5500 feet, cleared for approach.",
+        "sound-file": "soundFile052.m4a",
+        "transcript-result": "Skymark 1 2 3. Descend and maintain 5500 feet. Creanfall uploads."
+    },
+    {
+        "text": "ANA456, cross runway 29R, contact ground on the other side.",
+        "sound-file": "soundFile053.m4a",
+        "transcript-result": "Oronippon 456, cross-lovered ZNINA light, contact ground on the other side."
+    },
+    {
+        "text": "JAL789, go around, traffic on runway, climb to 5500 feet.",
+        "sound-file": "soundFile054.m4a",
+        "transcript-result": "JAPANIA 789A GO ALOUND TRAFFIC ON LUNDWAY CLIMB 25500 FEET"
+    },
+    {
+        "text": "APJ901, runway 27R, cleared for departure.",
+        "sound-file": "soundFile055.m4a",
+        "transcript-result": "AirPitch 9901, long way 27R, cleared for departure."
+    },
+    {
+        "text": "IBX234, hold short of runway 16R, traffic on final.",
+        "sound-file": "soundFile056.m4a",
+        "transcript-result": "IMAX 2C4 hold short of runway 16B traffic on final"
+    },
+    {
+        "text": "SFJ567, turn left heading 180, vectors for spacing.",
+        "sound-file": "soundFile057.m4a",
+        "transcript-result": "Star flyer 567, turn left heading 180, vector for spacing."
+    },
+    {
+        "text": "SKY890, runway 34L, cleared for takeoff.",
+        "sound-file": "soundFile058.m4a",
+        "transcript-result": "It's time mark 8 9 9 0 long way C4 left cleared for takeoff"
+    },
+    {
+        "text": "ANA123, hold position, traffic on final approach.",
+        "sound-file": "soundFile059.m4a",
+        "transcript-result": "Morning phone 1.3.3 Hold position. Traffic from final approach."
+    },
+    {
+        "text": "JAL456, reduce speed to 200 knots, maintain current heading.",
+        "sound-file": "soundFile060.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ789, turn right heading 330, vectors for approach.",
+        "sound-file": "soundFile061.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX901, descend and maintain 4200 feet, cleared for approach.",
+        "sound-file": "soundFile062.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ234, cross runway 21L, contact ground on the other side.",
+        "sound-file": "soundFile063.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY567, go around, traffic on runway, climb to 6500 feet.",
+        "sound-file": "soundFile064.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA890, runway 32R, cleared for takeoff.",
+        "sound-file": "soundFile065.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL123, hold short of runway 09, traffic on final.",
+        "sound-file": "soundFile066.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ456, turn left heading 270, vectors for spacing.",
+        "sound-file": "soundFile067.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX789, runway 25R, cleared for takeoff.",
+        "sound-file": "soundFile068.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ901, hold position, traffic crossing runway.",
+        "sound-file": "soundFile069.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY234, reduce speed to 170 knots, traffic ahead.",
+        "sound-file": "soundFile070.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA567, turn right heading 090, vectors for final approach.",
+        "sound-file": "soundFile071.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL890, descend and maintain 4500 feet, cleared for approach.",
+        "sound-file": "soundFile072.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ123, cross runway 34R, contact ground on the other side.",
+        "sound-file": "soundFile073.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX456, go around, traffic on runway, climb to 7200 feet.",
+        "sound-file": "soundFile074.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ789, runway 27L, cleared for departure.",
+        "sound-file": "soundFile075.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY901, hold short of runway 18R, traffic on final.",
+        "sound-file": "soundFile076.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA234, turn left heading 180, vectors for spacing.",
+        "sound-file": "soundFile077.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL567, runway 16L, cleared for takeoff.",
+        "sound-file": "soundFile078.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ789, hold position, traffic on final approach.",
+        "sound-file": "soundFile079.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX901, reduce speed to 210 knots, maintain current heading.",
+        "sound-file": "soundFile080.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ123, turn right heading 330, vectors for approach.",
+        "sound-file": "soundFile081.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY456, descend and maintain 4800 feet, cleared for approach.",
+        "sound-file": "soundFile082.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA890, cross runway 25L, contact ground on the other side.",
+        "sound-file": "soundFile083.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL234, go around, traffic on runway, climb to 5800 feet.",
+        "sound-file": "soundFile084.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ567, runway 32R, cleared for takeoff.",
+        "sound-file": "soundFile085.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX789, hold short of runway 34L, traffic on final.",
+        "sound-file": "soundFile086.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ901, turn left heading 270, vectors for spacing.",
+        "sound-file": "soundFile087.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY123, runway 09, cleared for takeoff.",
+        "sound-file": "soundFile088.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA456, hold position, traffic crossing runway.",
+        "sound-file": "soundFile089.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL789, reduce speed to 180 knots, traffic ahead.",
+        "sound-file": "soundFile090.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ901, turn right heading 090, vectors for final approach.",
+        "sound-file": "soundFile091.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX234, descend and maintain 5100 feet, cleared for approach.",
+        "sound-file": "soundFile092.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ567, cross runway 18R, contact ground on the other side.",
+        "sound-file": "soundFile093.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY890, go around, traffic on runway, climb to 6700 feet.",
+        "sound-file": "soundFile094.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA123, runway 21R, cleared for departure.",
+        "sound-file": "soundFile095.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL456, hold short of runway 27R, traffic on final.",
+        "sound-file": "soundFile096.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ789, turn left heading 180, vectors for spacing.",
+        "sound-file": "soundFile097.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX901, runway 34R, cleared for takeoff.",
+        "sound-file": "soundFile098.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ234, hold position, traffic on final approach.",
+        "sound-file": "soundFile099.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY567, reduce speed to 190 knots, maintain current heading.",
+        "sound-file": "soundFile100.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA890, turn right heading 330, vectors for approach.",
+        "sound-file": "soundFile101.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL123, descend and maintain 4900 feet, cleared for approach.",
+        "sound-file": "soundFile102.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ456, cross runway 21L, contact ground on the other side.",
+        "sound-file": "soundFile103.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX789, go around, traffic on runway, climb to 7000 feet.",
+        "sound-file": "soundFile104.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ901, runway 25L, cleared for takeoff.",
+        "sound-file": "soundFile105.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY567, hold short of runway 16R, traffic on final.",
+        "sound-file": "soundFile106.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA234, turn left heading 270, vectors for spacing.",
+        "sound-file": "soundFile107.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL567, runway 27L, cleared for takeoff.",
+        "sound-file": "soundFile108.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ789, hold position, traffic crossing runway.",
+        "sound-file": "soundFile109.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX901, reduce speed to 220 knots, traffic ahead.",
+        "sound-file": "soundFile110.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ123, turn right heading 090, vectors for final approach.",
+        "sound-file": "soundFile111.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY456, descend and maintain 5500 feet, cleared for approach.",
+        "sound-file": "soundFile112.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA890, cross runway 34R, contact ground on the other side.",
+        "sound-file": "soundFile113.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL234, go around, traffic on runway, climb to 6000 feet.",
+        "sound-file": "soundFile114.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX789, hold short of runway 18L, traffic on final.",
+        "sound-file": "soundFile115.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ901, turn left heading 180, vectors for spacing.",
+        "sound-file": "soundFile116.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY123, runway 16R, cleared for takeoff.",
+        "sound-file": "soundFile117.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA456, hold position, traffic on final approach.",
+        "sound-file": "soundFile118.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL789, reduce speed to 200 knots, maintain current heading.",
+        "sound-file": "soundFile119.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ901, turn right heading 330, vectors for approach.",
+        "sound-file": "soundFile120.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX234, descend and maintain 5000 feet, cleared for approach.",
+        "sound-file": "soundFile121.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ567, cross runway 25L, contact ground on the other side.",
+        "sound-file": "soundFile122.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY890, go around, traffic on runway, climb to 6500 feet.",
+        "sound-file": "soundFile123.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA123, runway 21L, cleared for departure.",
+        "sound-file": "soundFile124.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL456, hold short of runway 29R, traffic on final.",
+        "sound-file": "soundFile125.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA567, expedite climb to 8000 feet, traffic above.",
+        "sound-file": "soundFile126.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL890, turn left heading 270, vectors for spacing.",
+        "sound-file": "soundFile127.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ123, runway 09, cleared for takeoff.",
+        "sound-file": "soundFile128.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX456, hold position, runway incursion reported.",
+        "sound-file": "soundFile129.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ789, reduce speed to 180 knots, maintain separation.",
+        "sound-file": "soundFile130.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY901, turn right heading 090, vectors for approach.",
+        "sound-file": "soundFile131.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA234, descend and maintain 4000 feet, cleared for approach.",
+        "sound-file": "soundFile132.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL567, cross runway 32L, contact ground on the other side.",
+        "sound-file": "soundFile133.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ890, go around, aircraft not cleared to land, climb to 6000 feet.",
+        "sound-file": "soundFile134.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX123, runway 27R, cleared for departure.",
+        "sound-file": "soundFile135.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ456, turn left heading 180, vectors for spacing.",
+        "sound-file": "soundFile136.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY789, runway 34L, cleared for takeoff.",
+        "sound-file": "soundFile137.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA901, hold position, traffic crossing runway.",
+        "sound-file": "soundFile138.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL234, reduce speed to 190 knots, traffic ahead.",
+        "sound-file": "soundFile139.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ567, turn right heading 330, vectors for final approach.",
+        "sound-file": "soundFile140.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX890, descend and maintain 4500 feet, cleared for approach.",
+        "sound-file": "soundFile141.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ123, cross runway 18R, contact ground on the other side.",
+        "sound-file": "soundFile142.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY456, go around, traffic on runway, climb to 7000 feet.",
+        "sound-file": "soundFile143.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA789, runway 27R, cleared for departure.",
+        "sound-file": "soundFile144.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL901, hold short of runway 16R, traffic on final.",
+        "sound-file": "soundFile145.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ234, turn left heading 270, vectors for spacing.",
+        "sound-file": "soundFile146.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX567, runway 25R, cleared for takeoff.",
+        "sound-file": "soundFile147.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ890, hold position, traffic on final approach.",
+        "sound-file": "soundFile148.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY123, reduce speed to 170 knots, maintain current heading.",
+        "sound-file": "soundFile149.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA456, turn right heading 090, vectors for approach.",
+        "sound-file": "soundFile150.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL789, descend and maintain 4800 feet, cleared for approach.",
+        "sound-file": "soundFile151.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ901, cross runway 21L, contact ground on the other side.",
+        "sound-file": "soundFile152.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX234, go around, traffic on runway, climb to 7200 feet.",
+        "sound-file": "soundFile153.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ567, runway 29L, cleared for takeoff.",
+        "sound-file": "soundFile154.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY890, hold short of runway 34R, traffic on final.",
+        "sound-file": "soundFile155.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA123, turn left heading 180, vectors for spacing.",
+        "sound-file": "soundFile156.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL456, runway 16L, cleared for takeoff.",
+        "sound-file": "soundFile157.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ234, turn right heading 330, vectors for final approach.",
+        "sound-file": "soundFile158.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY567, descend and maintain 4900 feet, cleared for approach.",
+        "sound-file": "soundFile159.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL123, go around, traffic on runway, climb to 5800 feet.",
+        "sound-file": "soundFile160.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ456, runway 32R, cleared for takeoff.",
+        "sound-file": "soundFile161.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL789, reduce speed to 180 knots, maintain separation.",
+        "sound-file": "soundFile162.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ901, turn right heading 090, vectors for approach.",
+        "sound-file": "soundFile163.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA123, climb to FL240, maintain heading 180, vectors for departure.",
+        "sound-file": "soundFile164.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL567, turn right heading 270, traffic on approach, maintain current altitude.",
+        "sound-file": "soundFile165.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ890, descend to 3000 feet, cleared for visual approach, contact tower.",
+        "sound-file": "soundFile166.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX456, hold position, traffic on taxiway, wait for further instructions.",
+        "sound-file": "soundFile167.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ789, cleared for immediate takeoff, traffic behind on final approach.",
+        "sound-file": "soundFile168.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY234, extend downwind, spacing with departing traffic.",
+        "sound-file": "soundFile169.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA890, turn left heading 090, vectors for traffic sequencing.",
+        "sound-file": "soundFile170.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL345, go around, runway incursion reported, climb to 4000 feet.",
+        "sound-file": "soundFile171.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ678, cross runway 09, contact ground on the other side.",
+        "sound-file": "soundFile172.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX901, reduce speed to 180 knots, spacing with preceding aircraft.",
+        "sound-file": "soundFile173.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL567, turn left heading 270, vectors for spacing.",
+        "sound-file": "soundFile174.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ890, hold position, traffic crossing runway.",
+        "sound-file": "soundFile175.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX456, reduce speed to 200 knots, traffic ahead.",
+        "sound-file": "soundFile176.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ789, turn right heading 090, vectors for final approach.",
+        "sound-file": "soundFile177.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY234, descend and maintain 5000 feet, cleared for approach.",
+        "sound-file": "soundFile178.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA890, cross runway 16R, contact ground on the other side.",
+        "sound-file": "soundFile179.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL345, go around, traffic on runway, climb to 4000 feet.",
+        "sound-file": "soundFile180.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX901, hold short of runway 14R, traffic on final.",
+        "sound-file": "soundFile181.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA567, turn left heading 270, vectors for spacing.",
+        "sound-file": "soundFile182.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL890, hold position, traffic crossing runway.",
+        "sound-file": "soundFile183.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ345, reduce speed to 220 knots, traffic ahead.",
+        "sound-file": "soundFile184.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX678, turn right heading 090, vectors for final approach.",
+        "sound-file": "soundFile185.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ901, descend and maintain 5000 feet, cleared for approach.",
+        "sound-file": "soundFile186.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY234, cross runway 16R, contact ground on the other side.",
+        "sound-file": "soundFile187.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA456, go around, traffic on runway, climb to 4000 feet.",
+        "sound-file": "soundFile188.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL789, runway 21L, cleared for takeoff.",
+        "sound-file": "soundFile189.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ123, hold short of runway 14R, traffic on final.",
+        "sound-file": "soundFile190.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX890, turn left heading 180, vectors for spacing.",
+        "sound-file": "soundFile191.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA567, climb to FL240, maintain heading 180, vectors for departure.",
+        "sound-file": "soundFile192.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL890, turn right heading 270, traffic on approach, maintain current altitude.",
+        "sound-file": "soundFile193.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ345, descend to 3000 feet, cleared for visual approach, contact tower.",
+        "sound-file": "soundFile194.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX678, hold position, traffic on taxiway, wait for further instructions.",
+        "sound-file": "soundFile195.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ901, cleared for immediate takeoff, traffic behind on final approach.",
+        "sound-file": "soundFile196.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA456, turn left heading 090, vectors for traffic sequencing.",
+        "sound-file": "soundFile197.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL789, go around, runway incursion reported, climb to 4000 feet.",
+        "sound-file": "soundFile198.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ123, cross runway 09, contact ground on the other side.",
+        "sound-file": "soundFile199.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX890, reduce speed to 180 knots, spacing with preceding aircraft.",
+        "sound-file": "soundFile200.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA724, you are cleared for takeoff from runway 27.",
+        "sound-file": "soundFile201.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL539, maintain your current altitude.",
+        "sound-file": "soundFile202.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ618, change your heading to 180 degrees.",
+        "sound-file": "soundFile203.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX827, reduce your speed to 250 knots.",
+        "sound-file": "soundFile204.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ402, descend to 3000 feet and hold at present position.",
+        "sound-file": "soundFile205.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY915, reduce your speed to 250 knots.",
+        "sound-file": "soundFile206.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA736, traffic information: There is a Boeing 747 at your 2 o'clock, maintain visual separation.",
+        "sound-file": "soundFile207.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO203, turn left heading 240 degrees immediately due to traffic conflict.",
+        "sound-file": "soundFile208.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ810, climb and maintain FL350.",
+        "sound-file": "soundFile209.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "AHX347, expect vectors for an ILS approach to runway 12.",
+        "sound-file": "soundFile210.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY628, you have been cleared to land on runway 18L.",
+        "sound-file": "soundFile211.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA129, maintain your current speed until further advised.",
+        "sound-file": "soundFile212.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ506, contact Approach Control on frequency 124.5 for further instructions.",
+        "sound-file": "soundFile213.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX914, climb and maintain FL280.",
+        "sound-file": "soundFile214.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL742, expedite your climb to FL280 for traffic separation.",
+        "sound-file": "soundFile215.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA633, squawk 4321 and ident.",
+        "sound-file": "soundFile216.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA875, climb and maintain FL280.",
+        "sound-file": "soundFile217.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL382, expedite your climb to FL280 for traffic separation.",
+        "sound-file": "soundFile218.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ946, squawk 4321 and ident.",
+        "sound-file": "soundFile219.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX519, you are cleared for takeoff from runway 27.",
+        "sound-file": "soundFile220.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ723, maintain your current altitude.",
+        "sound-file": "soundFile221.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY604, change your heading to 180 degrees.",
+        "sound-file": "soundFile222.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA287, reduce your speed to 250 knots.",
+        "sound-file": "soundFile223.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO613, descend to 3000 feet and hold at present position.",
+        "sound-file": "soundFile224.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ408, reduce your speed to 250 knots.",
+        "sound-file": "soundFile225.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "AHX957, traffic information: There is a Boeing 747 at your 2 o'clock, maintain visual separation.",
+        "sound-file": "soundFile226.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY815, turn left heading 240 degrees immediately due to traffic conflict.",
+        "sound-file": "soundFile227.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA176, climb and maintain FL350.",
+        "sound-file": "soundFile228.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ529, expect vectors for an ILS approach to runway 12.",
+        "sound-file": "soundFile229.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX468, you have been cleared to land on runway 18L.",
+        "sound-file": "soundFile230.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL864, maintain your current speed until further advised.",
+        "sound-file": "soundFile231.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA273, contact Approach Control on frequency 124.5 for further instructions.",
+        "sound-file": "soundFile232.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY742, climb and maintain FL280.",
+        "sound-file": "soundFile233.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA513, expedite your climb to FL280 for traffic separation.",
+        "sound-file": "soundFile234.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ867, squawk 4321 and ident.",
+        "sound-file": "soundFile235.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX695, you are cleared for takeoff from runway 27.",
+        "sound-file": "soundFile236.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL287, maintain your current altitude.",
+        "sound-file": "soundFile237.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA954, change your heading to 180 degrees.",
+        "sound-file": "soundFile238.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "APJ621, reduce your speed to 250 knots.",
+        "sound-file": "soundFile239.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ349, descend to 3000 feet and hold at present position.",
+        "sound-file": "soundFile240.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO816, reduce your speed to 250 knots.",
+        "sound-file": "soundFile241.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "AHX475, traffic information: There is a Boeing 747 at your 2 o'clock, maintain visual separation.",
+        "sound-file": "soundFile242.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY628, turn left heading 240 degrees immediately due to traffic conflict.",
+        "sound-file": "soundFile243.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA213, climb and maintain FL350.",
+        "sound-file": "soundFile244.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ509, expect vectors for an ILS approach to runway 12.",
+        "sound-file": "soundFile245.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX857, you have been cleared to land on runway 18L.",
+        "sound-file": "soundFile246.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL167, maintain your current speed until further advised.",
+        "sound-file": "soundFile247.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA754, contact Approach Control on frequency 124.5 for further instructions.",
+        "sound-file": "soundFile248.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO328, climb and maintain FL280.",
+        "sound-file": "soundFile249.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ709, expedite your climb to FL280 for traffic separation.",
+        "sound-file": "soundFile250.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "AHX532, squawk 4321 and ident.",
+        "sound-file": "soundFile251.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY976, you are cleared for takeoff from runway 27.",
+        "sound-file": "soundFile252.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA642, maintain your current altitude.",
+        "sound-file": "soundFile253.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA853, change your heading to 180 degrees.",
+        "sound-file": "soundFile254.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL471, reduce your speed to 250 knots.",
+        "sound-file": "soundFile255.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX195, descend to 3000 feet and hold at present position.",
+        "sound-file": "soundFile256.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ618, reduce your speed to 250 knots.",
+        "sound-file": "soundFile257.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO457, traffic information: There is a Boeing 747 at your 2 o'clock, maintain visual separation.",
+        "sound-file": "soundFile258.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY821, turn left heading 240 degrees immediately due to traffic conflict.",
+        "sound-file": "soundFile259.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA596, climb and maintain FL350.",
+        "sound-file": "soundFile260.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ403, expect vectors for an ILS approach to runway 12.",
+        "sound-file": "soundFile261.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "AHX219, you have been cleared to land on runway 18L.",
+        "sound-file": "soundFile262.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX864, maintain your current speed until further advised.",
+        "sound-file": "soundFile263.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL539, contact Approach Control on frequency 124.5 for further instructions.",
+        "sound-file": "soundFile264.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA729, climb and maintain FL280.",
+        "sound-file": "soundFile265.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ382, expedite your climb to FL280 for traffic separation.",
+        "sound-file": "soundFile266.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY546, squawk 4321 and ident.",
+        "sound-file": "soundFile267.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA879, you are cleared for takeoff from runway 27.",
+        "sound-file": "soundFile268.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ249, maintain your current altitude.",
+        "sound-file": "soundFile269.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "AHX613, change your heading to 180 degrees.",
+        "sound-file": "soundFile270.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX791, reduce your speed to 250 knots.",
+        "sound-file": "soundFile271.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL935, descend to 3000 feet and hold at present position.",
+        "sound-file": "soundFile272.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO457, reduce your speed to 250 knots.",
+        "sound-file": "soundFile273.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA528, traffic information: There is a Boeing 747 at your 2 o'clock, maintain visual separation.",
+        "sound-file": "soundFile274.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY315, turn left heading 240 degrees immediately due to traffic conflict.",
+        "sound-file": "soundFile275.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ682, climb and maintain FL350.",
+        "sound-file": "soundFile276.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX194, expect vectors for an ILS approach to runway 12.",
+        "sound-file": "soundFile277.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ507, you have been cleared to land on runway 18L.",
+        "sound-file": "soundFile278.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA829, maintain your current speed until further advised.",
+        "sound-file": "soundFile279.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "AHX253, contact Approach Control on frequency 124.5 for further instructions.",
+        "sound-file": "soundFile280.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL586, climb and maintain FL280.",
+        "sound-file": "soundFile281.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA729, expedite your climb to FL280 for traffic separation.",
+        "sound-file": "soundFile282.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY936, squawk 4321 and ident.",
+        "sound-file": "soundFile283.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ472, you are cleared for takeoff from runway 27.",
+        "sound-file": "soundFile284.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO634, maintain your current altitude.",
+        "sound-file": "soundFile285.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX875, change your heading to 180 degrees.",
+        "sound-file": "soundFile286.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ152, reduce your speed to 250 knots.",
+        "sound-file": "soundFile287.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA967, descend to 3000 feet and hold at present position.",
+        "sound-file": "soundFile288.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "AHX315, reduce your speed to 250 knots.",
+        "sound-file": "soundFile289.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL578, traffic information: There is a Boeing 747 at your 2 o'clock, maintain visual separation.",
+        "sound-file": "soundFile290.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA894, turn left heading 240 degrees immediately due to traffic conflict.",
+        "sound-file": "soundFile291.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY467, climb and maintain FL350.",
+        "sound-file": "soundFile292.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ829, expect vectors for an ILS approach to runway 12.",
+        "sound-file": "soundFile293.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ215, you have been cleared to land on runway 18L.",
+        "sound-file": "soundFile294.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX732, maintain your current speed until further advised.",
+        "sound-file": "soundFile295.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO618, contact Approach Control on frequency 124.5 for further instructions.",
+        "sound-file": "soundFile296.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA893, climb and maintain FL280.",
+        "sound-file": "soundFile297.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL479, expedite your climb to FL280 for traffic separation.",
+        "sound-file": "soundFile298.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA741, squawk 4321 and ident.",
+        "sound-file": "soundFile299.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ982, you are cleared for takeoff from runway 27.",
+        "sound-file": "soundFile300.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "AHX376, maintain your current altitude.",
+        "sound-file": "soundFile301.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY649, change your heading to 180 degrees.",
+        "sound-file": "soundFile302.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ723, reduce your speed to 250 knots.",
+        "sound-file": "soundFile303.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX218, descend to 3000 feet and hold at present position.",
+        "sound-file": "soundFile304.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO537, reduce your speed to 250 knots.",
+        "sound-file": "soundFile305.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA412, traffic information: There is a Boeing 747 at your 2 o'clock, maintain visual separation.",
+        "sound-file": "soundFile306.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA864, turn left heading 240 degrees immediately due to traffic conflict.",
+        "sound-file": "soundFile307.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL694, climb and maintain FL350.",
+        "sound-file": "soundFile308.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ527, expect vectors for an ILS approach to runway 12.",
+        "sound-file": "soundFile309.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY983, you have been cleared to land on runway 18L.",
+        "sound-file": "soundFile310.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "AHX615, maintain your current speed until further advised.",
+        "sound-file": "soundFile311.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX875, contact Approach Control on frequency 124.5 for further instructions.",
+        "sound-file": "soundFile312.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ532, climb and maintain FL280.",
+        "sound-file": "soundFile313.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO186, expedite your climb to FL280 for traffic separation.",
+        "sound-file": "soundFile314.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ457, squawk 4321 and ident.",
+        "sound-file": "soundFile315.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL953, you are cleared for takeoff from runway 27.",
+        "sound-file": "soundFile316.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA846, maintain your current altitude.",
+        "sound-file": "soundFile317.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY319, change your heading to 180 degrees.",
+        "sound-file": "soundFile318.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA726, reduce your speed to 250 knots.",
+        "sound-file": "soundFile319.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "AHX981, descend to 3000 feet and hold at present position.",
+        "sound-file": "soundFile320.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX543, reduce your speed to 250 knots.",
+        "sound-file": "soundFile321.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ218, traffic information: There is a Boeing 747 at your 2 o'clock, maintain visual separation.",
+        "sound-file": "soundFile322.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO357, turn left heading 240 degrees immediately due to traffic conflict.",
+        "sound-file": "soundFile323.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ634, climb and maintain FL350.",
+        "sound-file": "soundFile324.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL529, expect vectors for an ILS approach to runway 12.",
+        "sound-file": "soundFile325.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA781, you have been cleared to land on runway 18L.",
+        "sound-file": "soundFile326.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY469, maintain your current speed until further advised.",
+        "sound-file": "soundFile327.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA612, contact Approach Control on frequency 124.5 for further instructions.",
+        "sound-file": "soundFile328.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX258, climb and maintain FL280.",
+        "sound-file": "soundFile329.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ726, expedite your climb to FL280 for traffic separation.",
+        "sound-file": "soundFile330.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO385, squawk 4321 and ident.",
+        "sound-file": "soundFile331.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ974, you are cleared for takeoff from runway 27.",
+        "sound-file": "soundFile332.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA529, maintain your current altitude.",
+        "sound-file": "soundFile333.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL763, change your heading to 180 degrees.",
+        "sound-file": "soundFile334.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY894, reduce your speed to 250 knots.",
+        "sound-file": "soundFile335.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA719, descend to 3000 feet and hold at present position.",
+        "sound-file": "soundFile336.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "AHX638, reduce your speed to 250 knots.",
+        "sound-file": "soundFile337.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX941, traffic information: There is a Boeing 747 at your 2 o'clock, maintain visual separation.",
+        "sound-file": "soundFile338.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ215, turn left heading 240 degrees immediately due to traffic conflict.",
+        "sound-file": "soundFile339.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ672, climb and maintain FL350.",
+        "sound-file": "soundFile340.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO815, expect vectors for an ILS approach to runway 12.",
+        "sound-file": "soundFile341.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA964, you have been cleared to land on runway 18L.",
+        "sound-file": "soundFile342.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL826, maintain your current speed until further advised.",
+        "sound-file": "soundFile343.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY593, contact Approach Control on frequency 124.5 for further instructions.",
+        "sound-file": "soundFile344.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA376, climb and maintain FL280.",
+        "sound-file": "soundFile345.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX641, expedite your climb to FL280 for traffic separation.",
+        "sound-file": "soundFile346.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ928, squawk 4321 and ident.",
+        "sound-file": "soundFile347.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO273, you are cleared for takeoff from runway 27.",
+        "sound-file": "soundFile348.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ591, maintain your current altitude.",
+        "sound-file": "soundFile349.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "AHX736, change your heading to 180 degrees.",
+        "sound-file": "soundFile350.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA849, reduce your speed to 250 knots.",
+        "sound-file": "soundFile351.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL742, you are cleared for takeoff from runway 27, winds are calm.",
+        "sound-file": "soundFile352.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY936, climb and maintain FL320.",
+        "sound-file": "soundFile353.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA513, reduce your speed to 220 knots due to turbulence.",
+        "sound-file": "soundFile354.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX695, expect radar vectors for traffic avoidance.",
+        "sound-file": "soundFile355.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ472, descend to 2000 feet and maintain a holding pattern.",
+        "sound-file": "soundFile356.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ682, turn right heading 090 degrees for spacing.",
+        "sound-file": "soundFile357.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO328, expedite climb to FL350 for traffic separation.",
+        "sound-file": "soundFile358.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "AHX532, squawk 7700 for emergency.",
+        "sound-file": "soundFile359.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA894, descend immediately to FL200 for traffic conflict resolution.",
+        "sound-file": "soundFile360.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL479, maintain current heading and altitude until further advised.",
+        "sound-file": "soundFile361.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY649, you are cleared to land on runway 18R, follow the light signals.",
+        "sound-file": "soundFile362.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA726, change frequency to 119.3 for handoff to Tower.",
+        "sound-file": "soundFile363.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ218, fly heading 270 for weather deviation.",
+        "sound-file": "soundFile364.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "AHX615, contact Departure Control for new routing instructions.",
+        "sound-file": "soundFile365.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX875, expect delay due to airport congestion, hold position.",
+        "sound-file": "soundFile366.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ532, descend and maintain FL180, proceed with caution.",
+        "sound-file": "soundFile367.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO186, climb to FL280 and maintain Mach 0.80.",
+        "sound-file": "soundFile368.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA781, reduce speed to 180 knots for wake turbulence separation.",
+        "sound-file": "soundFile369.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY469, hold at present position, expect further clearance in 10 minutes.",
+        "sound-file": "soundFile370.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA612, contact Ground Control for taxi instructions to gate.",
+        "sound-file": "soundFile371.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX258, expect short delay for departure, standby for clearance.",
+        "sound-file": "soundFile372.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ726, fly heading 150 for spacing, maintain visual separation.",
+        "sound-file": "soundFile373.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ974, expedite climb to FL320, traffic at 12 o'clock.",
+        "sound-file": "soundFile374.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA529, reduce speed to 160 knots, follow the aircraft ahead.",
+        "sound-file": "soundFile375.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL763, descend to 5000 feet for vectoring into the approach.",
+        "sound-file": "soundFile376.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY894, climb and maintain FL240 for better reception.",
+        "sound-file": "soundFile377.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO385, fly heading 180 for radar identification.",
+        "sound-file": "soundFile378.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ672, maintain current altitude, expect traffic advisory.",
+        "sound-file": "soundFile379.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX641, descend to FL200, traffic below.",
+        "sound-file": "soundFile380.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ928, turn left heading 270 for re-routing.",
+        "sound-file": "soundFile381.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA376, expedite climb to FL300 for traffic separation.",
+        "sound-file": "soundFile382.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA849, reduce speed to 200 knots, caution wake turbulence.",
+        "sound-file": "soundFile383.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL501, you are cleared to land on runway 36L, winds calm.",
+        "sound-file": "soundFile384.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY712, climb to FL350, expedite for traffic separation.",
+        "sound-file": "soundFile385.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO227, maintain present altitude, expect further clearance.",
+        "sound-file": "soundFile386.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX518, expect delay for departure, standby for instructions.",
+        "sound-file": "soundFile387.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ622, descend to 3000 feet, expect ILS approach clearance.",
+        "sound-file": "soundFile388.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ824, maintain speed and heading, traffic behind.",
+        "sound-file": "soundFile389.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA923, climb and maintain FL280, expedite for traffic.",
+        "sound-file": "soundFile390.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA649, reduce speed to 180 knots, caution bird activity.",
+        "sound-file": "soundFile391.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL713, expect vectors for spacing, maintain present altitude.",
+        "sound-file": "soundFile392.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY841, descend to FL180, prepare for visual approach.",
+        "sound-file": "soundFile393.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO529, hold at current position, expect further clearance shortly.",
+        "sound-file": "soundFile394.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX732, maintain current heading, caution turbulence ahead.",
+        "sound-file": "soundFile395.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ356, climb and maintain FL320, expedite for traffic avoidance.",
+        "sound-file": "soundFile396.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ481, reduce speed to 200 knots, caution icing conditions.",
+        "sound-file": "soundFile397.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA639, expect rerouting due to weather, standby for new clearance.",
+        "sound-file": "soundFile398.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA924, fly heading 210 for vectoring into the approach path.",
+        "sound-file": "soundFile399.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL782, maintain present altitude, follow the traffic ahead.",
+        "sound-file": "soundFile400.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY597, descend to 5000 feet, expect radar vectors.",
+        "sound-file": "soundFile401.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO413, reduce speed to 160 knots for spacing, caution turbulence.",
+        "sound-file": "soundFile402.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX867, climb to FL280, expedite for traffic separation.",
+        "sound-file": "soundFile403.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ245, hold at present position, traffic congestion ahead.",
+        "sound-file": "soundFile404.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ382, fly heading 270 for radar identification, maintain speed.",
+        "sound-file": "soundFile405.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA718, descend to 4000 feet, expect further descent shortly.",
+        "sound-file": "soundFile406.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA827, maintain current heading and speed, expect handoff soon.",
+        "sound-file": "soundFile407.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL529, climb and maintain FL300, expedite for traffic avoidance.",
+        "sound-file": "soundFile408.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY926, descend to FL200, caution traffic below.",
+        "sound-file": "soundFile409.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO631, reduce speed to 180 knots, maintain spacing.",
+        "sound-file": "soundFile410.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX593, maintain present altitude, expect further instructions.",
+        "sound-file": "soundFile411.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ428, fly heading 180, caution bird activity in the area.",
+        "sound-file": "soundFile412.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ715, climb to FL280, expedite for traffic separation.",
+        "sound-file": "soundFile413.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA819, expect delay for departure, standby for clearance.",
+        "sound-file": "soundFile414.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA427, descend to 3000 feet, expect ILS approach clearance shortly.",
+        "sound-file": "soundFile415.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL509, maintain current altitude and heading, expect handoff.",
+        "sound-file": "soundFile416.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY639, descend to 6000 feet, caution terrain ahead.",
+        "sound-file": "soundFile417.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO728, fly heading 090 for vectoring into the approach path.",
+        "sound-file": "soundFile418.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX527, maintain speed and altitude, expect traffic advisory.",
+        "sound-file": "soundFile419.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ918, reduce speed to 220 knots, caution wake turbulence.",
+        "sound-file": "soundFile420.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ834, climb and maintain FL320, expedite for traffic avoidance.",
+        "sound-file": "soundFile421.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA652, descend to FL180, expect radar vectors for approach.",
+        "sound-file": "soundFile422.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA528, maintain present heading and speed, expect further clearance.",
+        "sound-file": "soundFile423.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL789, descend to 4000 feet, expect visual approach clearance.",
+        "sound-file": "soundFile424.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY917, climb to FL280, expedite for traffic separation.",
+        "sound-file": "soundFile425.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO634, reduce speed to 160 knots for spacing, caution turbulence.",
+        "sound-file": "soundFile426.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX843, maintain current altitude, expect rerouting due to weather.",
+        "sound-file": "soundFile427.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ529, fly heading 270 for vectoring into the approach path.",
+        "sound-file": "soundFile428.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ816, hold at present position, expect further clearance soon.",
+        "sound-file": "soundFile429.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA271, climb and maintain FL300, expedite for traffic avoidance.",
+        "sound-file": "soundFile430.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA753, descend to FL240, expect ILS approach clearance.",
+        "sound-file": "soundFile431.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL628, maintain speed and altitude, expect handoff shortly.",
+        "sound-file": "soundFile432.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY419, descend to 7000 feet, caution terrain ahead.",
+        "sound-file": "soundFile433.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO937, fly heading 180, expect radar identification.",
+        "sound-file": "soundFile434.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX586, maintain present heading and speed, expect traffic advisory.",
+        "sound-file": "soundFile435.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ716, reduce speed to 200 knots, caution icing conditions.",
+        "sound-file": "soundFile436.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ832, climb to FL320, expedite for traffic separation.",
+        "sound-file": "soundFile437.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA517, descend to FL220, expect further descent shortly.",
+        "sound-file": "soundFile438.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA645, maintain current altitude and heading, expect handoff.",
+        "sound-file": "soundFile439.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL827, climb and maintain FL300, expedite for traffic avoidance.",
+        "sound-file": "soundFile440.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY522, descend to FL180, expect radar vectors for approach.",
+        "sound-file": "soundFile441.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO734, maintain speed and altitude, expect rerouting due to weather.",
+        "sound-file": "soundFile442.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX417, fly heading 270 for vectoring into the approach path.",
+        "sound-file": "soundFile443.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ628, hold at present position, expect further clearance soon.",
+        "sound-file": "soundFile444.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ819, climb and maintain FL320, expedite for traffic avoidance.",
+        "sound-file": "soundFile445.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA678, reduce speed to 180 knots, caution wake turbulence.",
+        "sound-file": "soundFile446.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA972, descend to FL240, expect ILS approach clearance.",
+        "sound-file": "soundFile447.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL743, maintain speed and altitude, expect handoff shortly.",
+        "sound-file": "soundFile448.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY536, descend to 7000 feet, caution terrain ahead.",
+        "sound-file": "soundFile449.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO824, climb to FL280, expedite for traffic separation.",
+        "sound-file": "soundFile450.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX628, reduce speed to 160 knots for spacing, caution turbulence.",
+        "sound-file": "soundFile451.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ913, turn right heading 090 degrees, vectoring for approach.",
+        "sound-file": "soundFile452.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ729, maintain current altitude, expect traffic advisory.",
+        "sound-file": "soundFile453.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA542, climb and maintain FL300, expedite for traffic avoidance.",
+        "sound-file": "soundFile454.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA639, descend to FL220, expect further descent shortly.",
+        "sound-file": "soundFile455.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL827, maintain current speed and altitude, expect handoff.",
+        "sound-file": "soundFile456.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY728, climb and maintain FL320, expedite for traffic separation.",
+        "sound-file": "soundFile457.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO913, reduce speed to 180 knots, caution wake turbulence.",
+        "sound-file": "soundFile458.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX742, descend to FL180, expect radar vectors for approach.",
+        "sound-file": "soundFile459.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ624, maintain present heading and speed, expect rerouting due to weather.",
+        "sound-file": "soundFile460.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ837, fly heading 270 for vectoring into the approach path.",
+        "sound-file": "soundFile461.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA941, hold at present position, expect further clearance soon.",
+        "sound-file": "soundFile462.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA526, climb and maintain FL320, expedite for traffic avoidance.",
+        "sound-file": "soundFile463.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL819, reduce speed to 200 knots, caution icing conditions.",
+        "sound-file": "soundFile464.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY614, descend to FL220, expect ILS approach clearance.",
+        "sound-file": "soundFile465.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO753, maintain speed and altitude, expect handoff shortly.",
+        "sound-file": "soundFile466.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX936, climb to FL300, expedite for traffic avoidance.",
+        "sound-file": "soundFile467.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ529, descend to FL200, caution turbulence.",
+        "sound-file": "soundFile468.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ718, maintain current heading and speed, expect traffic advisory.",
+        "sound-file": "soundFile469.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA832, climb and maintain FL320, expedite for traffic separation.",
+        "sound-file": "soundFile470.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA527, descend to FL180, expect radar vectors for approach.",
+        "sound-file": "soundFile471.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL647, maintain speed and altitude, expect rerouting due to weather.",
+        "sound-file": "soundFile472.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY728, fly heading 090 for vectoring into the approach path.",
+        "sound-file": "soundFile473.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO826, hold at present position, expect further clearance soon.",
+        "sound-file": "soundFile474.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX913, climb and maintain FL320, expedite for traffic avoidance.",
+        "sound-file": "soundFile475.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ627, reduce speed to 160 knots, caution wake turbulence.",
+        "sound-file": "soundFile476.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ825, descend to FL220, expect further descent shortly.",
+        "sound-file": "soundFile477.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA741, maintain current altitude and heading, expect handoff.",
+        "sound-file": "soundFile478.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA936, climb and maintain FL300, expedite for traffic avoidance.",
+        "sound-file": "soundFile479.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL518, reduce speed to 180 knots, caution icing conditions.",
+        "sound-file": "soundFile480.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY642, descend to FL240, expect ILS approach clearance.",
+        "sound-file": "soundFile481.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO723, maintain speed and altitude, expect handoff shortly.",
+        "sound-file": "soundFile482.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX937, climb to FL320, expedite for traffic avoidance.",
+        "sound-file": "soundFile483.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ629, descend to FL200, caution turbulence.",
+        "sound-file": "soundFile484.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ817, maintain current heading and speed, expect traffic advisory.",
+        "sound-file": "soundFile485.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA928, climb and maintain FL320, expedite for traffic separation.",
+        "sound-file": "soundFile486.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA538, descend to FL180, expect radar vectors for approach.",
+        "sound-file": "soundFile487.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL723, maintain speed and altitude, expect rerouting due to weather.",
+        "sound-file": "soundFile488.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY826, fly heading 090 for vectoring into the approach path.",
+        "sound-file": "soundFile489.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO937, hold at present position, expect further clearance soon.",
+        "sound-file": "soundFile490.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX836, climb and maintain FL320, expedite for traffic avoidance.",
+        "sound-file": "soundFile491.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ529, reduce speed to 160 knots, caution wake turbulence.",
+        "sound-file": "soundFile492.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ718, descend to FL220, expect further descent shortly.",
+        "sound-file": "soundFile493.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA832, maintain current altitude and heading, expect handoff.",
+        "sound-file": "soundFile494.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA927, climb and maintain FL300, expedite for traffic avoidance.",
+        "sound-file": "soundFile495.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL742, you are cleared for takeoff from runway 27, winds 270 at 10 knots.",
+        "sound-file": "soundFile496.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY936, climb and maintain FL320, turn left heading 220.",
+        "sound-file": "soundFile497.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ918, turn left heading 270 for re-routing.",
+        "sound-file": "soundFile498.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ834, climb to FL320, expedite for traffic separation.",
+        "sound-file": "soundFile499.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX936, climb to FL320, expedite for traffic avoidance.",
+        "sound-file": "soundFile500.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL742, turn left heading 270, climb and maintain FL350.",
+        "sound-file": "soundFile501.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY936, expedite climb to FL320, turn right heading 040.",
+        "sound-file": "soundFile502.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA513, reduce your speed to 220 knots due to wake turbulence.",
+        "sound-file": "soundFile503.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX695, expect radar vectors for traffic avoidance, descend and maintain FL240.",
+        "sound-file": "soundFile504.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ472, descend to 2000 feet and maintain 210 knots, expect ILS approach clearance.",
+        "sound-file": "soundFile505.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ682, turn right heading 090 degrees for spacing, maintain 180 knots.",
+        "sound-file": "soundFile506.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO328, expedite climb to FL350 for traffic separation, maintain Mach 0.80.",
+        "sound-file": "soundFile507.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "AHX532, squawk 7700 for emergency, turn left heading 180.",
+        "sound-file": "soundFile508.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA894, descend immediately to FL200 for traffic conflict resolution, reduce speed to 160 knots.",
+        "sound-file": "soundFile509.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL479, maintain current heading and altitude until further advised, expect vectors for the ILS approach.",
+        "sound-file": "soundFile510.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY649, you are cleared to land on runway 18R, follow the light signals, maintain present speed.",
+        "sound-file": "soundFile511.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA726, change frequency to 119.3 for handoff to Tower, descend and maintain 5000 feet.",
+        "sound-file": "soundFile512.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ218, fly heading 270 for weather deviation, climb and maintain FL280.",
+        "sound-file": "soundFile513.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "AHX615, contact Departure Control for new routing instructions, turn left heading 360.",
+        "sound-file": "soundFile514.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX875, expect delay due to airport congestion, hold position, reduce speed to 180 knots.",
+        "sound-file": "soundFile515.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ532, descend and maintain FL180, proceed with caution, expect radar vectors for final approach.",
+        "sound-file": "soundFile516.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO186, climb to FL280 and maintain Mach 0.80, expect vectors for traffic avoidance.",
+        "sound-file": "soundFile517.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA781, reduce speed to 180 knots for wake turbulence separation, climb and maintain FL320.",
+        "sound-file": "soundFile518.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY469, hold at present position, expect further clearance in 10 minutes, maintain current heading.",
+        "sound-file": "soundFile519.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA612, contact Ground Control for taxi instructions to gate, maintain speed at 20 knots.",
+        "sound-file": "soundFile520.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX258, expect short delay for departure, standby for clearance, reduce speed to 160 knots.",
+        "sound-file": "soundFile521.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ726, fly heading 150 for spacing, maintain visual separation, climb and maintain FL350.",
+        "sound-file": "soundFile522.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ974, expedite climb to FL320, traffic at 12 o'clock, reduce speed to 220 knots.",
+        "sound-file": "soundFile523.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA529, reduce speed to 160 knots, follow the aircraft ahead, descend to 3000 feet.",
+        "sound-file": "soundFile524.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL763, descend to 5000 feet for vectoring into the approach, maintain present speed.",
+        "sound-file": "soundFile525.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY894, climb and maintain FL240 for better reception, reduce speed to 220 knots.",
+        "sound-file": "soundFile526.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO385, fly heading 180 for radar identification, maintain current altitude, reduce speed to 180 knots.",
+        "sound-file": "soundFile527.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ672, maintain current altitude, expect traffic advisory, reduce speed to 200 knots.",
+        "sound-file": "soundFile528.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX641, descend to FL200, traffic below, expect further descent shortly.",
+        "sound-file": "soundFile529.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ918, turn left heading 270 for re-routing, expect vectors for ILS approach, maintain current altitude.",
+        "sound-file": "soundFile530.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA376, expedite climb to FL300 for traffic separation, maintain Mach 0.78.",
+        "sound-file": "soundFile531.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA849, reduce speed to 200 knots, caution wake turbulence, descend and maintain FL240.",
+        "sound-file": "soundFile532.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL501, you are cleared to land on runway 36L, winds calm, maintain current speed.",
+        "sound-file": "soundFile533.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY712, climb to FL350, expedite for traffic separation, reduce speed to 250 knots.",
+        "sound-file": "soundFile534.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO227, maintain present altitude, expect further clearance, turn left heading 120.",
+        "sound-file": "soundFile535.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX518, expect delay for departure, standby for instructions, maintain current speed.",
+        "sound-file": "soundFile536.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ622, descend to 3000 feet, expect ILS approach clearance, maintain heading 080.",
+        "sound-file": "soundFile537.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ824, maintain speed and heading, traffic behind, climb and maintain FL300.",
+        "sound-file": "soundFile538.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA923, climb and maintain FL280, expedite for traffic, reduce speed to 240 knots.",
+        "sound-file": "soundFile539.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA649, reduce speed to 180 knots, caution bird activity, maintain current altitude.",
+        "sound-file": "soundFile540.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL713, expect vectors for spacing, maintain present altitude, reduce speed to 160 knots.",
+        "sound-file": "soundFile541.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY841, descend to FL180, prepare for visual approach, maintain current heading.",
+        "sound-file": "soundFile542.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO529, hold at current position, expect further clearance shortly, maintain current speed.",
+        "sound-file": "soundFile543.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX732, maintain current heading, caution turbulence ahead, climb and maintain FL280.",
+        "sound-file": "soundFile544.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ356, climb and maintain FL320, expedite for traffic avoidance, reduce speed to 200 knots.",
+        "sound-file": "soundFile545.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ481, reduce speed to 200 knots, caution icing conditions, maintain present altitude.",
+        "sound-file": "soundFile546.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA639, expect rerouting due to weather, standby for new clearance, descend and maintain FL240.",
+        "sound-file": "soundFile547.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA924, fly heading 210 for vectoring into the approach path, maintain current speed and altitude.",
+        "sound-file": "soundFile548.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL782, maintain present altitude, follow the traffic ahead, expect handoff to Tower.",
+        "sound-file": "soundFile549.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY597, descend to 5000 feet, expect radar vectors, maintain speed at 220 knots.",
+        "sound-file": "soundFile550.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO413, reduce speed to 160 knots for spacing, caution turbulence, maintain FL320.",
+        "sound-file": "soundFile551.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX867, climb to FL280, expedite for traffic separation, reduce speed to 220 knots.",
+        "sound-file": "soundFile552.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ245, hold at present position, traffic congestion ahead, maintain heading 270.",
+        "sound-file": "soundFile553.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ382, fly heading 270 for radar identification, maintain speed at 250 knots.",
+        "sound-file": "soundFile554.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA718, descend to 4000 feet, expect further descent shortly, maintain current heading.",
+        "sound-file": "soundFile555.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA827, maintain current heading and speed, expect handoff soon, climb and maintain FL320.",
+        "sound-file": "soundFile556.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL529, climb and maintain FL300, expedite for traffic avoidance, reduce speed to 240 knots.",
+        "sound-file": "soundFile557.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY926, descend to FL200, caution traffic below, reduce speed to 180 knots.",
+        "sound-file": "soundFile558.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO631, reduce speed to 180 knots, maintain spacing, climb and maintain FL280.",
+        "sound-file": "soundFile559.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX593, maintain present altitude, expect further instructions, turn left heading 090.",
+        "sound-file": "soundFile560.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ428, fly heading 180, caution bird activity in the area, maintain current speed.",
+        "sound-file": "soundFile561.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ715, climb to FL280, expedite for traffic separation, reduce speed to 220 knots.",
+        "sound-file": "soundFile562.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA819, expect delay for departure, standby for clearance, maintain present altitude.",
+        "sound-file": "soundFile563.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA427, descend to 3000 feet, expect ILS approach clearance shortly, maintain speed at 200 knots.",
+        "sound-file": "soundFile564.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL509, maintain current altitude and heading, expect handoff, reduce speed to 160 knots.",
+        "sound-file": "soundFile565.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY639, descend to 6000 feet, caution terrain ahead, maintain current heading and speed.",
+        "sound-file": "soundFile566.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO728, fly heading 090 for vectoring into the approach path, maintain FL320.",
+        "sound-file": "soundFile567.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX527, maintain speed and altitude, expect traffic advisory, reduce speed to 220 knots.",
+        "sound-file": "soundFile568.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ918, reduce speed to 220 knots, caution wake turbulence, descend and maintain FL220.",
+        "sound-file": "soundFile569.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ834, climb to FL320, expedite for traffic separation, reduce speed to 240 knots.",
+        "sound-file": "soundFile570.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA652, descend to FL180, expect radar vectors for approach, maintain current heading.",
+        "sound-file": "soundFile571.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA528, maintain present heading and speed, expect further clearance, climb and maintain FL300.",
+        "sound-file": "soundFile572.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL789, descend to 4000 feet, expect visual approach clearance, maintain present speed.",
+        "sound-file": "soundFile573.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY917, climb to FL280, expedite for traffic separation, reduce speed to 200 knots.",
+        "sound-file": "soundFile574.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO634, reduce speed to 160 knots for spacing, caution turbulence, maintain FL240.",
+        "sound-file": "soundFile575.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX843, maintain current altitude, expect rerouting due to weather, reduce speed to 180 knots.",
+        "sound-file": "soundFile576.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ529, fly heading 270 for vectoring into the approach path, maintain current altitude.",
+        "sound-file": "soundFile577.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ818, hold at present position, expect further clearance soon, maintain current speed.",
+        "sound-file": "soundFile578.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA271, climb and maintain FL300, expedite for traffic avoidance, reduce speed to 220 knots.",
+        "sound-file": "soundFile579.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA753, descend to FL240, expect ILS approach clearance, maintain present heading.",
+        "sound-file": "soundFile580.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL628, maintain speed and altitude, expect handoff shortly, turn left heading 180.",
+        "sound-file": "soundFile581.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY419, descend to 7000 feet, caution terrain ahead, maintain current speed and altitude.",
+        "sound-file": "soundFile582.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO937, fly heading 180, expect radar identification, maintain FL320.",
+        "sound-file": "soundFile583.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX586, maintain present heading and speed, expect traffic advisory, reduce speed to 220 knots.",
+        "sound-file": "soundFile584.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ716, reduce speed to 200 knots, caution icing conditions, descend to FL220.",
+        "sound-file": "soundFile585.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ832, climb to FL320, expedite for traffic separation, reduce speed to 240 knots.",
+        "sound-file": "soundFile586.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA517, descend to FL220, expect further descent shortly, maintain present heading.",
+        "sound-file": "soundFile587.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA645, maintain current altitude and heading, expect handoff, reduce speed to 200 knots.",
+        "sound-file": "soundFile588.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL827, climb and maintain FL300, expedite for traffic avoidance, reduce speed to 240 knots.",
+        "sound-file": "soundFile589.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY522, descend to FL180, expect radar vectors for approach, maintain current speed.",
+        "sound-file": "soundFile590.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO734, maintain speed and altitude, expect rerouting due to weather, reduce speed to 180 knots.",
+        "sound-file": "soundFile591.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX417, fly heading 270 for vectoring into the approach path, maintain FL320.",
+        "sound-file": "soundFile592.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ628, hold at present position, expect further clearance soon, maintain current speed.",
+        "sound-file": "soundFile593.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ819, climb and maintain FL320, expedite for traffic avoidance, reduce speed to 220 knots.",
+        "sound-file": "soundFile594.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA678, reduce speed to 180 knots, caution wake turbulence, maintain FL280.",
+        "sound-file": "soundFile595.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA972, descend to FL240, expect ILS approach clearance, maintain present heading.",
+        "sound-file": "soundFile596.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL743, maintain speed and altitude, expect handoff shortly, turn left heading 180.",
+        "sound-file": "soundFile597.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY536, descend to 7000 feet, caution terrain ahead, maintain current speed.",
+        "sound-file": "soundFile598.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO824, climb to FL280, expedite for traffic separation, reduce speed to 240 knots.",
+        "sound-file": "soundFile599.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX628, reduce speed to 160 knots for spacing, caution turbulence, maintain FL320.",
+        "sound-file": "soundFile600.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ913, turn right heading 090 degrees, vectoring for approach, maintain present altitude.",
+        "sound-file": "soundFile601.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ729, maintain current altitude, expect traffic advisory, maintain current speed.",
+        "sound-file": "soundFile602.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA542, climb and maintain FL300, expedite for traffic avoidance, reduce speed to 220 knots.",
+        "sound-file": "soundFile603.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA639, descend to FL220, expect further descent shortly, maintain present speed.",
+        "sound-file": "soundFile604.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL827, maintain current speed and altitude, expect handoff, turn left heading 180.",
+        "sound-file": "soundFile605.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY728, climb and maintain FL320, expedite for traffic separation, reduce speed to 240 knots.",
+        "sound-file": "soundFile606.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO913, reduce speed to 180 knots, caution wake turbulence, maintain FL280.",
+        "sound-file": "soundFile607.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX742, descend to FL180, expect radar vectors for approach, maintain current speed.",
+        "sound-file": "soundFile608.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ624, maintain present heading and speed, expect rerouting due to weather, maintain FL320.",
+        "sound-file": "soundFile609.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ837, fly heading 270 for vectoring into the approach path, maintain FL320.",
+        "sound-file": "soundFile610.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA941, hold at present position, expect further clearance soon, maintain current speed.",
+        "sound-file": "soundFile611.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA526, climb and maintain FL320, expedite for traffic avoidance, reduce speed to 240 knots.",
+        "sound-file": "soundFile612.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL819, reduce speed to 200 knots, caution icing conditions, maintain FL280.",
+        "sound-file": "soundFile613.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY614, descend to FL220, expect ILS approach clearance, maintain current speed.",
+        "sound-file": "soundFile614.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO753, maintain speed and altitude, expect handoff shortly, turn left heading 180.",
+        "sound-file": "soundFile615.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX936, climb to FL320, expedite for traffic avoidance, reduce speed to 240 knots.",
+        "sound-file": "soundFile616.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ529, descend to FL200, caution turbulence, maintain current speed and altitude.",
+        "sound-file": "soundFile617.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ718, maintain current heading and speed, expect traffic advisory, maintain FL320.",
+        "sound-file": "soundFile618.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA832, climb and maintain FL320, expedite for traffic separation, reduce speed to 240 knots.",
+        "sound-file": "soundFile619.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA527, descend to FL180, expect radar vectors for approach, maintain current heading.",
+        "sound-file": "soundFile620.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL647, maintain speed and altitude, expect rerouting due to weather, maintain FL320.",
+        "sound-file": "soundFile621.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY826, fly heading 090 for vectoring into the approach path, maintain FL320.",
+        "sound-file": "soundFile622.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO937, hold at present position, expect further clearance soon, maintain current speed.",
+        "sound-file": "soundFile623.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX836, climb and maintain FL320, expedite for traffic avoidance, reduce speed to 240 knots.",
+        "sound-file": "soundFile624.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ529, reduce speed to 160 knots, caution wake turbulence, maintain FL280.",
+        "sound-file": "soundFile625.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ718, descend to FL220, expect further descent shortly, maintain current speed.",
+        "sound-file": "soundFile626.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA832, maintain current altitude and heading, expect handoff, reduce speed to 220 knots.",
+        "sound-file": "soundFile627.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA927, climb and maintain FL300, expedite for traffic avoidance, reduce speed to 240 knots.",
+        "sound-file": "soundFile628.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL518, reduce speed to 180 knots, caution icing conditions, maintain FL280.",
+        "sound-file": "soundFile629.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY642, descend to FL240, expect ILS approach clearance, maintain current speed.",
+        "sound-file": "soundFile630.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO723, maintain speed and altitude, expect handoff shortly, turn left heading 180.",
+        "sound-file": "soundFile631.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX937, climb to FL320, expedite for traffic avoidance, reduce speed to 240 knots.",
+        "sound-file": "soundFile632.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ629, descend to FL200, caution turbulence, maintain current speed and altitude.",
+        "sound-file": "soundFile633.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ817, maintain current heading and speed, expect traffic advisory, maintain FL320.",
+        "sound-file": "soundFile634.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA928, climb and maintain FL320, expedite for traffic separation, reduce speed to 240 knots.",
+        "sound-file": "soundFile635.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA538, descend to FL180, expect radar vectors for approach, maintain current heading.",
+        "sound-file": "soundFile636.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL723, maintain speed and altitude, expect rerouting due to weather, maintain FL320.",
+        "sound-file": "soundFile637.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL624, climb and maintain FL350, turn left heading 320 for traffic avoidance, reduce speed to 240 knots.",
+        "sound-file": "soundFile638.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY839, descend to FL240, expect radar vectors for approach, maintain current heading and speed.",
+        "sound-file": "soundFile639.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX529, hold at present position, expect further clearance soon, maintain current altitude.",
+        "sound-file": "soundFile640.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ726, fly heading 270 for vectoring into the approach path, maintain FL320, reduce speed to 200 knots.",
+        "sound-file": "soundFile641.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ927, climb to FL280, expedite for traffic separation, reduce speed to 220 knots, caution turbulence.",
+        "sound-file": "soundFile642.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA419, descend to 6000 feet, maintain present heading, caution terrain ahead, reduce speed to 180 knots.",
+        "sound-file": "soundFile643.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO752, maintain speed and altitude, expect rerouting due to weather, reduce speed to 160 knots.",
+        "sound-file": "soundFile644.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA631, turn right heading 090, climb to FL300, expedite for traffic avoidance, reduce speed to 220 knots.",
+        "sound-file": "soundFile645.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL927, reduce speed to 180 knots, caution icing conditions, descend to FL220, expect ILS approach clearance.",
+        "sound-file": "soundFile646.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY528, maintain current altitude and heading, expect handoff shortly, turn left heading 180.",
+        "sound-file": "soundFile647.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX742, climb to FL320, expedite for traffic avoidance, reduce speed to 220 knots, expect further clearance.",
+        "sound-file": "soundFile648.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ819, reduce speed to 160 knots, caution wake turbulence, maintain FL280, expect traffic advisory.",
+        "sound-file": "soundFile649.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ631, descend to FL200, expect radar vectors for approach, maintain current speed and altitude.",
+        "sound-file": "soundFile650.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA528, maintain speed and altitude, expect rerouting due to weather, reduce speed to 180 knots.",
+        "sound-file": "soundFile651.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO726, climb and maintain FL320, expedite for traffic separation, reduce speed to 240 knots.",
+        "sound-file": "soundFile652.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA528, turn left heading 270, descend to FL240, expect ILS approach clearance, maintain current speed.",
+        "sound-file": "soundFile653.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL819, fly heading 090 for vectoring into the approach path, maintain FL280, reduce speed to 200 knots.",
+        "sound-file": "soundFile654.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY527, maintain current altitude, expect handoff shortly, turn right heading 180, reduce speed to 160 knots.",
+        "sound-file": "soundFile655.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX832, descend to FL180, caution turbulence, maintain current speed, expect radar vectors for approach.",
+        "sound-file": "soundFile656.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ726, climb to FL300, expedite for traffic avoidance, reduce speed to 220 knots, expect further clearance.",
+        "sound-file": "soundFile657.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ529, reduce speed to 180 knots, caution wake turbulence, descend to FL220, expect traffic advisory.",
+        "sound-file": "soundFile658.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA824, fly heading 270 for vectoring into the approach path, maintain FL320, reduce speed to 200 knots.",
+        "sound-file": "soundFile659.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO927, climb and maintain FL350, expedite for traffic separation, reduce speed to 240 knots, caution turbulence.",
+        "sound-file": "soundFile660.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA619, descend to FL240, expect ILS approach clearance, maintain current speed and altitude.",
+        "sound-file": "soundFile661.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL726, maintain speed and altitude, expect handoff shortly, turn left heading 180, reduce speed to 160 knots.",
+        "sound-file": "soundFile662.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY832, climb to FL320, expedite for traffic avoidance, reduce speed to 220 knots, expect further clearance.",
+        "sound-file": "soundFile663.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX529, turn right heading 090, descend to FL180, expect radar vectors for approach, maintain current speed.",
+        "sound-file": "soundFile664.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ824, maintain current altitude and heading, expect rerouting due to weather, reduce speed to 180 knots.",
+        "sound-file": "soundFile665.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ528, climb and maintain FL320, expedite for traffic separation, reduce speed to 240 knots, caution turbulence.",
+        "sound-file": "soundFile666.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA726, turn left heading 270, descend to FL220, expect traffic advisory, maintain current speed.",
+        "sound-file": "soundFile667.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO819, reduce speed to 200 knots, caution wake turbulence, descend to FL240, expect ILS approach clearance.",
+        "sound-file": "soundFile668.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA927, fly heading 090 for vectoring into the approach path, maintain FL280, reduce speed to 180 knots.",
+        "sound-file": "soundFile669.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL528, climb and maintain FL320, expedite for traffic avoidance, reduce speed to 220 knots, expect further clearance.",
+        "sound-file": "soundFile670.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY726, descend to FL200, expect radar vectors for approach, maintain current speed and altitude.",
+        "sound-file": "soundFile671.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "IBX819, maintain speed and altitude, expect rerouting due to weather, reduce speed to 160 knots.",
+        "sound-file": "soundFile672.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SFJ528, climb to FL350, expedite for traffic separation, reduce speed to 240 knots, expect further clearance.",
+        "sound-file": "soundFile673.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SNJ726, turn right heading 090, descend to FL180, expect traffic advisory, maintain current speed.",
+        "sound-file": "soundFile674.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "FDA927, maintain current altitude and heading, expect handoff shortly, turn left heading 180, reduce speed to 160 knots.",
+        "sound-file": "soundFile675.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ADO528, climb to FL320, expedite for traffic avoidance, reduce speed to 220 knots, expect ILS approach clearance.",
+        "sound-file": "soundFile676.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "ANA726, descend to FL240, expect radar vectors for approach, maintain current speed and altitude.",
+        "sound-file": "soundFile677.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "JAL819, fly heading 270 for vectoring into the approach path, maintain FL280, reduce speed to 200 knots.",
+        "sound-file": "soundFile678.m4a",
+        "transcript-result": ""
+    },
+    {
+        "text": "SKY528, maintain current altitude, expect handoff shortly, turn right heading 180, reduce speed to 160 knots.",
+        "sound-file": "soundFile679.m4a",
+        "transcript-result": ""
+    }
+]
