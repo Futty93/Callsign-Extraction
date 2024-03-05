@@ -17,16 +17,12 @@ if __name__ == "__main__":
         else:
             callsign = "Callsign is not found"
             
-        extracted_callsign = main(data[i]["transcript-result"])[0]
+        extracted_callsign:list[str, int] = main(data[i]["transcript-result"])
 
-        if extracted_callsign == False:
-            print("Callsign is not Found")
-            print(data[i]["text"])
-            print(data[i]["transcript-result"])
-        elif extracted_callsign == callsign:
+        if extracted_callsign[0] == callsign:
             count += 1
             print("success!")
-            print(callsign, extracted_callsign)
+            print(callsign, extracted_callsign[0], extracted_callsign[1])
         else:
             print("False!!")
             print(callsign, extracted_callsign)

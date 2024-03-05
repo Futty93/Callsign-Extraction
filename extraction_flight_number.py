@@ -3,6 +3,7 @@ from g2p_metaphone_gen  import G2PClass, MetaphoneClass
 from word_replace import WordReplaceClass
 from restoration_sentence import Restoration
 from reference_callsign import Extractor
+import json
 
 
 def process_extract_callsign(sentence, processing_type):
@@ -47,8 +48,24 @@ def process_extract_callsign(sentence, processing_type):
     return callsign
 
 
-def extraction_flight_number(input_text: str) -> str:
+def extraction_flight_number(input_text: str) -> list:
+    """
+    音声認識による文字起こしの結果の原文を引数とし、そこから空域情報と照会したコールサインを確信度(編集距離)とともに返す
+    
+    Parameters
+    ---
+        input_text: str
+            音声認識した管制官の命令文
+            
+    Return
+    ---
+        [callsign: str, min_distance: int]: list
+            抽出したコールサインを空域情報と照会し、最も近いものとその確信度(編集距離)のリスト
+    """
+    
     formated_text = SentenceFormatter().format_sentence(input_text)
+    
+    extractor = Extractor()
 
     replaced_array = WordReplaceClass.replace_words_spell(formated_text)
     restoration_sentence = []
@@ -61,22 +78,28 @@ def extraction_flight_number(input_text: str) -> str:
 
     restoration_sentence = ' '.join(restoration_sentence)
     restoration_callsign = Restoration().restoration_callSign(restoration_sentence)
-    callsign = Extractor().extract_pattern(restoration_callsign)
-
-    if callsign:
-        # print(callsign)
-        return callsign
+    extracted_callsigns = extractor.extract_pattern(restoration_callsign)
+    
+    if extracted_callsigns:
+        return extractor.get_closest_callsign(extracted_callsigns)
 
     callsign_metaphone = process_extract_callsign(formated_text, "metaphone")
     callsign_g2p = process_extract_callsign(formated_text, "g2p")
+    
+    # callsign_metaphone と callsign_g2p の値を検証して、抽出したコールサインのリストを作成する
+    extracted_callsigns: list = []
+    if callsign_metaphone and callsign_g2p:
+        extracted_callsigns = callsign_metaphone + callsign_g2p
+    elif callsign_metaphone:
+        extracted_callsigns = callsign_metaphone
+    elif callsign_g2p:
+        extracted_callsigns = callsign_g2p
+    else:
+        extracted_callsigns = []
 
-    if callsign_metaphone or callsign_g2p:
-        if callsign_metaphone:
-            # print(callsign_metaphone)
-            return callsign_metaphone
-        if callsign_g2p:
-            # print(callsign_g2p)
-            return callsign_g2p
+
+    if extracted_callsigns:
+        return extractor.get_closest_callsign(extracted_callsigns)
 
     extra_formated_text = SentenceFormatter().word_combination_formatter(formated_text)
 
@@ -84,26 +107,31 @@ def extraction_flight_number(input_text: str) -> str:
     callsign_metaphone_2 = process_extract_callsign(extra_formated_text[1], "metaphone")
     callsign_g2p_1 = process_extract_callsign(extra_formated_text[0], "g2p")
     callsign_g2p_2 = process_extract_callsign(extra_formated_text[1], "g2p")
+    
+    extracted_callsigns:list = []
 
-    if callsign_metaphone_1 or callsign_metaphone_2 or callsign_g2p_1 or callsign_g2p_2:
-        if callsign_metaphone_1:
-            # print(callsign_metaphone_1)
-            return callsign_metaphone_1
-        if callsign_metaphone_2:
-            # print(callsign_metaphone_2)
-            return callsign_metaphone_2
-        if callsign_g2p_1:
-            # print(callsign_g2p_1)
-            return callsign_g2p_1
-        if callsign_g2p_2:
-            # print(callsign_g2p_2)
-            return callsign_g2p_2
+    # callsign_metaphone_1 と callsign_metaphone_2 の値を検証して、抽出したコールサインのリストを作成する
+    if callsign_metaphone_1 and callsign_metaphone_2:
+        extracted_callsigns += callsign_metaphone_1 + callsign_metaphone_2
+    elif callsign_metaphone_1:
+        extracted_callsigns += callsign_metaphone_1
+    elif callsign_metaphone_2:
+        extracted_callsigns += callsign_metaphone_2
+
+    # callsign_g2p_1 と callsign_g2p_2 の値を検証して、抽出したコールサインのリストを作成する
+    if callsign_g2p_1 and callsign_g2p_2:
+        extracted_callsigns += callsign_g2p_1 + callsign_g2p_2
+    elif callsign_g2p_1:
+        extracted_callsigns += callsign_g2p_1
+    elif callsign_g2p_2:
+        extracted_callsigns += callsign_g2p_2
+
+    if extracted_callsigns:
+        return extractor.get_closest_callsign(extracted_callsigns)
+    
     else:
-        # print("Callsign not Found")
-        return "Callsign is not Found"
-
-    return False
+        return ["Callsign is not Found", 128]
 
 if __name__ == '__main__':
-    input_text: str = "5x456 Hold position. Traffic on final"
-    extraction_flight_number(input_text)
+    input_text: str = "IMAX456 Hold position. Traffic on final"
+    print(extraction_flight_number(input_text))
