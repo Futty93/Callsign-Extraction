@@ -1,4 +1,4 @@
-from sentenceFormat import SentenceFormatter
+from sentence_format import SentenceFormatter
 from g2p_metaphone_gen  import G2PClass, MetaphoneClass
 from word_replace import WordReplaceClass
 from restoration_sentence import Restoration
@@ -81,7 +81,9 @@ def extraction_flight_number(input_text: str) -> list:
     extracted_callsigns = extractor.extract_pattern(restoration_callsign)
     
     if extracted_callsigns:
-        return extractor.get_closest_callsign(extracted_callsigns)
+        closest_callsign = extractor.get_closest_callsign(extracted_callsigns)
+        if closest_callsign[1] < 2:
+            return closest_callsign
 
     callsign_metaphone = process_extract_callsign(formated_text, "metaphone")
     callsign_g2p = process_extract_callsign(formated_text, "g2p")
@@ -99,7 +101,9 @@ def extraction_flight_number(input_text: str) -> list:
 
 
     if extracted_callsigns:
-        return extractor.get_closest_callsign(extracted_callsigns)
+        closest_callsign = extractor.get_closest_callsign(extracted_callsigns)
+        if closest_callsign[1] < 2:
+            return closest_callsign
 
     extra_formated_text = SentenceFormatter().word_combination_formatter(formated_text)
 
@@ -127,11 +131,12 @@ def extraction_flight_number(input_text: str) -> list:
         extracted_callsigns += callsign_g2p_2
 
     if extracted_callsigns:
-        return extractor.get_closest_callsign(extracted_callsigns)
+        closest_callsign = extractor.get_closest_callsign(extracted_callsigns)
+        if closest_callsign[1] < 2:
+            return closest_callsign
     
-    else:
-        return ["Callsign is not Found", 128]
+    return ["Callsign is not Found", 128]
 
 if __name__ == '__main__':
-    input_text: str = "IMAX456 Hold position. Traffic on final"
+    input_text: str = "AirPitch 1 to 3, now switch to light, cleared for takeoff"
     print(extraction_flight_number(input_text))

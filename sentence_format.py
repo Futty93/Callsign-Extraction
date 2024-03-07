@@ -33,7 +33,7 @@ class SentenceFormatter:
 
     def extract_number(self, word: str) -> str:
         """
-        引数として与えられた文字列から数字から始まる部分を抽出する関数
+        引数として与えられた文字列から数字から始まる場合、数字だけを取り出す
 
         Parameters
         ---
@@ -49,20 +49,7 @@ class SentenceFormatter:
         if word and not word[0].isdigit():
             return word
 
-        # 数字以外の文字が出現するまでの部分を抽出
-        extracted_number = ''
-        for char in word:
-            if char.isdigit():
-                extracted_number += char
-            else:
-                pass
-
-        # 数字のみで構成されているかどうかをチェック
-        if extracted_number.isdigit():
-            return extracted_number
-        else:
-            # 数字以外の文字を削除した文字列を返す
-            return ''.join([char for char in extracted_number if char.isdigit()])
+        return ''.join([char for char in word if char.isdigit()])
 
     def format_sentence(self, text: str) -> str:
         """
