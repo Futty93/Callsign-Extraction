@@ -24,6 +24,13 @@
     - [format\_sentence()](#format_sentence)
     - [word\_combination\_formatter()](#word_combination_formatter)
   - [g2p\_metaphone\_gen.py](#g2p_metaphone_genpy)
+    - [generate\_g2p()](#generate_g2p)
+    - [generate\_g2p\_list()](#generate_g2p_list)
+    - [generate\_metaphone\_key\_list()](#generate_metaphone_key_list)
+  - [word\_replace.py](#word_replacepy)
+    - [replace\_words\_spell()](#replace_words_spell)
+    - [replace\_words\_metaphone()](#replace_words_metaphone)
+    - [replace\_words\_g2p()](#replace_words_g2p)
 
 
 
@@ -318,11 +325,11 @@ graph TD
     C --> D[偶数番目の単語, 次の単語]
     D -->|次の単語が数字| E(偶数番目の単語, 次の単語)
     D -->|その単語が数字| F("偶数番目の単語(数字)")
-    D -->|その他| G[偶数番目の単語+次の単語]
+    D -->|その他| G(偶数番目の単語+次の単語)
     C --> H[奇数番目の単語, 次の単語]
     H -->|次の単語が数字| I(奇数番目の単語, 次の単語)
     H -->|その単語が数字| J("奇数番目の単語(数字)")
-    H -->|その他| K[奇数番目の単語+次の単語]
+    H -->|その他| K(奇数番目の単語+次の単語)
     E --> L(偶数側のリストに追加)
     F --> L
     G --> L
@@ -334,3 +341,83 @@ graph TD
 ```
 
 ## g2p_metaphone_gen.py
+### generate_g2p()
+単語を引数として、それに対応するg2pを返す。
+g2pはデフォルトでは音素の配列を返すため、それを繋げて単語全体として返す。
+
+### generate_g2p_list()
+整形済みの文章を引数とし、単語ごとにg2pに変換し、リストを返す。
+```mermaid
+graph TD
+    A[開始] --> B[文章を単語に分ける]
+    B --> C{単語}
+    C --> |数字である| D[数字をそのままリストに追加]
+    C --> |数字ではない| E["generate_g2p()を呼び出す"]
+    E --> F[音素配列と元の単語をリストに追加]
+    D --> G[リストを返す]
+    F --> G
+```
+### generate_metaphone_key_list()
+整形済みの文章を引数とし、単語ごとにmetaphone keyに変換し、リストを返す。
+```mermaid
+graph TD
+    A[開始] --> B[文章を単語に分ける]
+    B --> C{単語}
+    C --> |数字である| D[数字をそのままリストに追加]
+    C --> |数字ではない| E[単語をmetaphone keyに変換]
+    E --> F[metaphone keyと元の単語をリストに追加]
+    D --> G[リストを返す]
+    F --> G
+```
+
+## word_replace.py
+単語を編集距離をもとに変換する
+### replace_words_spell()
+与えられた整形済みの文章を単語ごとに区切り、スペルを元に距離を計算し、登録されている近い単語に置き換える。
+```mermaid
+graph TD
+    A[開始] --> B[文章を単語に分ける]
+    B --> C[登録されている単語をjsonから読み込む]
+    C --> D{単語}
+    D --> |数字である| E[数字をそのままリストに追加]
+    D --> |数字ではない| F[単語と登録されているすべての単語との編集距離を計算する]
+    F --> G{最も距離の近いものの\n編集距離}
+    G --> |元の単語の長さの2/3以下|H[最も近い単語とその距離をリストに追加]
+    G --> |2/3以上|I[元の単語をリストに追加]
+    E --> J[リストを返す]
+    H --> J
+    I --> J
+```
+
+### replace_words_metaphone()
+与えられた単語のmetaphone keyの配列に対して、./generated_json/word_metaphone_key.jsonに登録されている単語との距離を計算し、最も近い単語に置き換える。
+```mermaid
+graph TD
+    A[開始] --> C[登録されている単語をjsonから読み込む]
+    C --> D{入力}
+    D --> |"リストではない\n(数字である)"| E[数字をそのままリストに追加]
+    D --> |"リストである\n(数字ではない)"| F[単語と登録されているすべての単語の\nMetaphoneとの編集距離を計算する]
+    F --> G{最も距離の近いものの\n編集距離}
+    G --> |元の単語の長さの2/3以下|H[最も近い単語と元の単語をリストに追加]
+    G --> |2/3以上|I[元の単語をリストに追加]
+    E --> J[リストを返す]
+    H --> J
+    I --> J
+```
+
+### replace_words_g2p()
+与えられた単語のg2pの配列に対して、./generated_json/word_g2p_key.jsonに登録されている単語との距離を計算し、最も近い単語に置き換える。
+```mermaid
+graph TD
+    A[開始] --> C[登録されている単語をjsonから読み込む]
+    C --> D{入力}
+    D --> |"リストではない\n(数字である)"| E[数字をそのままリストに追加]
+    D --> |"リストである\n(数字ではない)"| F[単語と登録されているすべての単語の\ng2pとの編集距離を計算する]
+    F --> G{最も距離の近いものの\n編集距離}
+    G --> |元の単語の長さの2/3以下|H[最も近い単語と元の単語をリストに追加]
+    G --> |2/3以上|I[元の単語をリストに追加]
+    E --> J[リストを返す]
+    H --> J
+    I --> J
+```
+

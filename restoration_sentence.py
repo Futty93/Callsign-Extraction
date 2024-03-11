@@ -8,7 +8,6 @@ class Restoration():
     def __init__(self):
         pass
 
-
     def restoration_sentence(self, word_list: list, type: str) -> list:
         """
         Parameters

@@ -6,7 +6,7 @@ class WordReplaceClass:
     def replace_words_spell(sentence: str) -> list:
         """
         与えられた整形済みの文章を単語ごとに区切り、スペルを元に距離を計算し
-        登録されている近い単語に置き換える・
+        登録されている近い単語に置き換える。
 
         Parameters
         ---
@@ -21,7 +21,7 @@ class WordReplaceClass:
         """
         word_list: list[str] = sentence.split()
 
-        # JSONファイルから単語とそれに対応するメタフォンキーを読み込む
+        # JSONファイルから単語を読み込む
         with open('./registered_json/word_register.json', 'r') as f:
             register_word_list = json.load(f)
 
@@ -63,7 +63,7 @@ class WordReplaceClass:
         Returns
         ---
             replaced_words: list[str]
-                単語を置き換えた場合は[置き換えた単語, 距離]の配列を返す
+                単語を置き換えた場合は[置き換えた単語, 元の単語]の配列を返す
                 単語の距離が一定以上ある場合は単語をそのまま返す
         """
 
@@ -107,7 +107,7 @@ class WordReplaceClass:
         Returns
         ---
             replaced_words: list[str]
-                単語を置き換えた場合は[置き換えた単語, 距離]の配列を返す
+                単語を置き換えた場合は[置き換えた単語, 元の単語]の配列を返す
                 単語の距離が一定以上ある場合は単語をそのまま返す
         """
         # JSONファイルから登録されている単語のg2pを読み込む
