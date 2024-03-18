@@ -1,22 +1,19 @@
 import re
 
 class SentenceFormatter:
-    def __init__(self):
-        pass
-
     def insert_space_before_number(self, word: str) -> str:
         """
-        単語内に数字が登場する場合、初めて数字が出現したとき、その前に半角スペースを挿入する関数
+        Insert a space before the first digit in the given word.
 
         Parameters
-        ---
-            word: str
-                数字が含まれる可能性のある単語
+        ----------
+        word : str
+            The word to be processed.
 
         Returns
-        ---
-            result: str
-                数字の前に半角スペースが挿入された単語
+        -------
+        str
+            The processed word with a space inserted before the first digit.
         """
         if word.isdigit():
             return word
@@ -33,17 +30,17 @@ class SentenceFormatter:
 
     def extract_number(self, word: str) -> str:
         """
-        引数として与えられた文字列から数字から始まる場合、数字だけを取り出す
+        Extract the leading numeric part from the given word.
 
         Parameters
-        ---
-            word: str
-                数字から始まる部分を抽出する対象の文字列
+        ----------
+        word : str
+            The word to be processed.
 
         Returns
-        ---
-            str
-                数字から始まる部分の文字列、または元の文字列
+        -------
+        str
+            The leading numeric part of the word, or the original word if it doesn't start with a digit.
         """
         # 最初の文字が数字であるかどうかをチェック
         if word and not word[0].isdigit():
@@ -53,13 +50,18 @@ class SentenceFormatter:
 
     def format_sentence(self, text: str) -> str:
         """
-        文章のフォーマットを行います。
+        Format the given text by removing unwanted characters, replacing hyphens with spaces,
+        and separating words and numbers.
 
-        Args:
-        - text (str): フォーマットする文章
+        Parameters
+        ----------
+        text : str
+            The text to be formatted.
 
-        Returns:
-        - str: フォーマットされた文章
+        Returns
+        -------
+        str
+            The formatted text.
         """
         # 不要な記号を削除
         text = text.replace(',', '').replace('.', '').replace("'", "").replace('"', '')
@@ -88,23 +90,21 @@ class SentenceFormatter:
         else:
             return modified_text
 
-        
     def word_combination_formatter(self, sentence: str) -> list[str, str]:
         """
-        整形済みの文章を受け取り、奇数番目と偶数番目に分けて連続する単語を接続して返す
+        Format the given sentence by combining consecutive words, except for numbers.
 
-        Parameter
-        ---
-            sentence: str
-                整形済みの文章
+        Parameters
+        ----------
+        sentence : str
+            The sentence to be formatted.
 
-        Returne
-        ---
-            even_word_sentence: str
-                偶数番目の単語とその次の単語を接続した文章を返す。ただし偶数番目が数字の場合は数字だけを追加し、偶数番目の次の単語が数字の場合は接合せずに2つの単語を並べて返す
-
-            odd_word_sentence: str
-                奇数番目の単語とその次の単語を接続した文章を返す。ただし奇数番目が数字の場合は数字だけを追加し、奇数番目の次の単語が数字の場合は接合せずに2つの単語を並べて返す
+        Returns
+        -------
+        list
+            A list containing two strings:
+                - The first string is the sentence with even-indexed words combined.
+                - The second string is the sentence with odd-indexed words combined.
         """
         word_list = sentence.split()
         even_word_sentence = []
@@ -134,24 +134,16 @@ class SentenceFormatter:
 
         return [even_word_sentence, odd_word_sentence]
 
-
-if __name__ == "__main__":
-    # クラスのインスタンス化
+def format_sentence(text: str) -> str:
+    """
+    Wrapper function to call the format_sentence method from the SentenceFormatter class.
+    """
     formatter = SentenceFormatter()
+    return formatter.format_sentence(text)
 
-    # テスト用の文章
-    sample_text = "Japania345C, Long way 3-2, cleared for departure."
-
-    # テキストのフォーマット
-    formatted_text = formatter.format_sentence(sample_text)
-
-    # フォーマットされたテキストの表示
-    print("Formatted text:", formatted_text)
-
-    print(SentenceFormatter().word_combination_formatter(formatted_text))
-
-    # print(SentenceFormatter().insert_space_before_number("Starfire12C3"))
-    # print(SentenceFormatter().insert_space_before_number("Japania345R"))
-    # print(SentenceFormatter().insert_space_before_number("MorningPhone"))
-
-    # print(SentenceFormatter().extract_number("345C"))
+def word_combination_formatter(sentence: str) -> list[str, str]:
+    """
+    Wrapper function to call the word_combination_formatter method from the SentenceFormatter class.
+    """
+    formatter = SentenceFormatter()
+    return formatter.word_combination_formatter(sentence)

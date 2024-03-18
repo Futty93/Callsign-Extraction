@@ -21,14 +21,17 @@
     - [extract\_number()](#extract_number)
     - [format\_sentence()](#format_sentence)
     - [word\_combination\_formatter()](#word_combination_formatter)
-  - [g2p\_metaphone\_gen.py](#g2p_metaphone_genpy)
+  - [g2p.py](#g2ppy)
     - [generate\_g2p()](#generate_g2p)
     - [generate\_g2p\_list()](#generate_g2p_list)
+  - [metaphone.py](#metaphonepy)
     - [generate\_metaphone\_key\_list()](#generate_metaphone_key_list)
-  - [word\_replace.py](#word_replacepy)
+  - [word\_processing.py](#word_processingpy)
     - [replace\_words\_spell()](#replace_words_spell)
     - [replace\_words\_metaphone()](#replace_words_metaphone)
     - [replace\_words\_g2p()](#replace_words_g2p)
+    - [extract\_callsigns()](#extract_callsigns)
+    - [get\_closest\_callsign()](#get_closest_callsign)
 
 
 
@@ -309,7 +312,7 @@ graph TD
     M --> N
 ```
 
-## g2p_metaphone_gen.py
+## g2p.py
 ### generate_g2p()
 単語を引数として、それに対応するg2pを返す。
 g2pはデフォルトでは音素の配列を返すため、それを繋げて単語全体として返す。
@@ -326,6 +329,8 @@ graph TD
     D --> G[リストを返す]
     F --> G
 ```
+
+## metaphone.py
 ### generate_metaphone_key_list()
 整形済みの文章を引数とし、単語ごとにmetaphone keyに変換し、リストを返す。
 ```mermaid
@@ -339,7 +344,7 @@ graph TD
     F --> G
 ```
 
-## word_replace.py
+## word_processing.py
 単語を編集距離をもとに変換する
 ### replace_words_spell()
 与えられた整形済みの文章を単語ごとに区切り、スペルを元に距離を計算し、登録されている近い単語に置き換える。
@@ -389,4 +394,9 @@ graph TD
     H --> J
     I --> J
 ```
+
+### extract_callsigns()
+
+
+### get_closest_callsign()
 
