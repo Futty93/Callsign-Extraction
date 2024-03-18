@@ -1,4 +1,4 @@
-[日本語](./README-jp.md)
+[日本語版READMEはこちら](./README-jp.md)
 
 **An English version of the README is currently under construction.**
 
