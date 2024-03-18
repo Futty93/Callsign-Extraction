@@ -3,12 +3,12 @@ import json
 class Restoration:
     def restoration_sentence(self, word_list: list, type: str) -> list:
         """
-        Restore replaced words using the appropriate dictionary.
+        A function that returns a sentence that has been replaced with the closest word in the key state to the word corresponding to the key.
 
         Parameters
         ----------
         word_list : list
-            A list of words, where replaced words are represented as lists [replaced_word, original_word].
+            A list of words, where replaced words are represented as lists [replaced_word_key, original_word].
         type : str
             The type of processing used ("g2p" or "metaphone").
 

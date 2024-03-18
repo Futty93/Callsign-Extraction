@@ -81,8 +81,6 @@ class GenerateJsonDataClass:
             json.dump(word_g2p_list, f, indent=4, ensure_ascii=False)
 
 
-
-
 if __name__ == '__main__':
     GenerateJsonDataClass().generate_metaphone_keys('./registered_json/word_register.json', './generated_json/word_metaphone_dict.json', './generated_json/word_metaphone_list.json')
     GenerateJsonDataClass().generate_g2p_list_and_dict('./registered_json/word_register.json', './generated_json/word_g2p_dict.json', './generated_json/word_g2p_list.json')
