@@ -1,6 +1,6 @@
 import json
 from doublemetaphone import doublemetaphone
-from g2p_metaphone_gen import G2PClass
+from g2p import G2PClass
 
 class GenerateJsonDataClass:
     def __init__(self):
