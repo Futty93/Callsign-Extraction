@@ -3,14 +3,14 @@ import json
 import re
 
 if __name__ == "__main__":
-    with open("./fixed_output.json", 'r', encoding='utf-8') as f:
+    with open("./transcript.json", 'r', encoding='utf-8') as f:
         data = json.load(f)
 
     pattern = r'\b([A-Z]{3})(\d+)\b'  # AAA111 のパターン
     count = 0
-    RANGE = 60
+    RANGE = 159 # sound fileの番号
     
-    for i in range(RANGE):
+    for i in range(RANGE + 1):
         match = re.search(pattern, data[i]["text"])
         if match:
             callsign = match.group(0)
