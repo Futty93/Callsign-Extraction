@@ -2,7 +2,6 @@
     "AL": "all",
     "NPN": "nippon",
     "ALNPN": "all nippon",
-    "NNR": "niner",
     "JPN": "japan",
     "AR": "air",
     "JPNR": "japan air",
@@ -14,7 +13,5 @@
     "STRFLR": "starflyer",
     "STR": "star",
     "FLR": "flyer",
-    "APKS": "ibex",
-    "ANT": "and",
-    "MNTN": "maintain"
+    "APKS": "ibex"
 }

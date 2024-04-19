@@ -28,7 +28,7 @@ class Extractor:
             return extracted_patterns
         else:
             return False
-
+    
     def reference_area_info(self, extracted_callsign: str) -> list:
         """
         Find the closest callsign match from the known area information.
@@ -46,7 +46,18 @@ class Extractor:
         min_distance: int = 128
         closest_callsign = ""
         for area_callsign in self.area_info:
-            d = distance(extracted_callsign, area_callsign)
+            # Extract alphabetic part
+            area_alpha_part = ''.join(filter(str.isalpha, area_callsign))
+            extracted_alpha_part = ''.join(filter(str.isalpha, extracted_callsign))
+
+            # Check if alphabetic parts match
+            if area_alpha_part != extracted_alpha_part:
+                continue
+                
+            # Calculate edit distance for numeric parts
+            area_num_part = ''.join(filter(str.isdigit, area_callsign))
+            extracted_num_part = ''.join(filter(str.isdigit, extracted_callsign))
+            d = distance(extracted_num_part, area_num_part)
             if d < min_distance:
                 min_distance = d
                 closest_callsign = area_callsign
