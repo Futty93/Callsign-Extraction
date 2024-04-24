@@ -2,6 +2,10 @@ from main import extraction_flight_number as main
 import json
 import re
 
+from whispercpp import Whisper
+
+w = Whisper('small')
+
 if __name__ == "__main__":
     with open("./transcript.json", 'r', encoding='utf-8') as f:
         data = json.load(f)
@@ -17,7 +21,11 @@ if __name__ == "__main__":
         else:
             callsign = "Callsign is not found"
             
-        extracted_callsign:list[str, int] = main(data[i]["transcript-result"])
+        result = w.transcribe(f"../音源ファイル/soundFiles/{data[i]['sound-file']}")
+        
+        text = w.extract_text(result)
+            
+        extracted_callsign:list[str, int] = main(text[0])
         
         print(i)
 
