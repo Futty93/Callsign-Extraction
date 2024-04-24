@@ -1,3 +1,5 @@
 doublemetaphone
 g2p_en
 python-Levenshtein
+git+https://github.com/stlukey/whispercpp.py
+
