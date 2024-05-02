@@ -24,7 +24,7 @@ if __name__ == "__main__":
         if extracted_callsign[0] == callsign:
             count += 1
             print("success!")
-            print(callsign, extracted_callsign[0], extracted_callsign[1])
+            print(callsign, extracted_callsign)
         else:
             print("False!!")
             print(callsign, extracted_callsign)

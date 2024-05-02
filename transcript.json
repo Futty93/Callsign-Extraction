@@ -330,9 +330,9 @@
         "transcript-result": "Onipong 890, long way 3-2 light, cleared for takeoff."
     },
     {
-        "text": "JAL123, hold short of runway 09, traffic on final.",
+        "text": "JAL133, hold short of runway 09, traffic on final.",
         "sound-file": "soundFile066.m4a",
-        "transcript-result": "Japan Air 123 Hold short of Long Way Zioniner. Traffic on final."
+        "transcript-result": "Japan Air 133 Hold short of Long Way Zioniner. Traffic on final."
     },
     {
         "text": "APJ456, turn left heading 270, vectors for spacing.",
@@ -510,9 +510,9 @@
         "transcript-result": "Orange Boom 890, sunlight hitting CCO, picked up for approach."
     },
     {
-        "text": "JAL123, descend and maintain 4900 feet, cleared for approach.",
+        "text": "JAL133, descend and maintain 4900 feet, cleared for approach.",
         "sound-file": "soundFile102.m4a",
-        "transcript-result": "Jibang Air, 1, 2, 3. Descend and maintain 4900 feet, cleared for approach."
+        "transcript-result": "Jibang Air, 1, 3, 3. Descend and maintain 4900 feet, cleared for approach."
     },
     {
         "text": "APJ456, cross runway 21L, contact ground on the other side.",
@@ -800,7 +800,7 @@
         "transcript-result": "Skymark 567. This is an Amentine 4900ft 3R4 approach."
     },
     {
-        "text": "JAL123, go around, traffic on runway, climb to 5800 feet.",
+        "text": "JAL133, go around, traffic on runway, climb to 5800 feet.",
         "sound-file": "soundFile160.m4a",
         "transcript-result": ""
     },

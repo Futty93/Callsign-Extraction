@@ -4,6 +4,7 @@ class SentenceFormatter:
     def insert_space_before_number(self, word: str) -> str:
         """
         Insert a space before the first digit in the given word.
+        数字の前にスペースを挿入する。
 
         Parameters
         ----------
@@ -31,6 +32,7 @@ class SentenceFormatter:
     def extract_number(self, word: str) -> str:
         """
         Extract the leading numeric part from the given word.
+        与えられた単語から先頭の数字部分を抽出する。
 
         Parameters
         ----------
@@ -52,6 +54,7 @@ class SentenceFormatter:
         """
         Format the given text by removing unwanted characters, replacing hyphens with spaces,
         and separating words and numbers.
+        入力された文章から , . ' " を削除し、- を半角スペースに置換し、数字と数字が連続している場合のスペースを削除する。
 
         Parameters
         ----------

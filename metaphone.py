@@ -26,3 +26,6 @@ class MetaphoneClass:
                 word_metaphone_key_list.append([doublemetaphone(word)[0], word])
 
         return word_metaphone_key_list
+    
+if __name__ == '__main__':
+    print(MetaphoneClass().generate_metaphone_key_list("Morningphone"))
