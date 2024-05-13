@@ -42,7 +42,7 @@ class WordReplacement:
                     min_distance = d
                     closest_word = register_word
 
-            if len(word) * 2 / 3 > min_distance:
+            if len(word)*2/3 > min_distance:
                 replaced_words.append([closest_word, min_distance])
             else:
                 replaced_words.append(word)
@@ -87,7 +87,7 @@ class WordReplacement:
                     min_distance = d
                     closest_word = metaphone_key_word
 
-            if len(word) * 2 / 3 > min_distance:
+            if len(word[0])*2/3 > min_distance:
                 replaced_words.append([closest_word, word[1]])
             else:
                 replaced_words.append(word[1])
@@ -129,7 +129,7 @@ class WordReplacement:
                     min_distance = d
                     closest_word = g2p_word
 
-            if len(word) * 2 / 3 > min_distance:
+            if len(word[0])*2/3 > min_distance:
                 replaced_words.append([closest_word, word[1]])
             else:
                 replaced_words.append(word[1])
@@ -191,7 +191,6 @@ def get_closest_callsign(extracted_callsigns: list, extractor: Extractor) -> lis
         A list containing the closest callsign match and its confidence (edit distance).
     """
     callsigns = []
-    print(extracted_callsigns)
     for item in extracted_callsigns:
         callsigns.append(extractor.reference_area_info(item))
 
