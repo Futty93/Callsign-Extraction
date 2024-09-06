@@ -174,9 +174,9 @@ def extract_callsigns(sentence: str, processing_type: str) -> list:
 
     return callsign
 
-def get_closest_callsign(extracted_callsigns: list, extractor: Extractor) -> list:
+def get_closest_callsigns(extracted_callsigns: list, extractor: Extractor) -> list:
     """
-    Find the closest callsign match from the extracted callsigns by comparing with known area information.
+    Find the closest callsign matches from the extracted callsigns by comparing with known area information.
 
     Parameters
     ----------
@@ -188,17 +188,19 @@ def get_closest_callsign(extracted_callsigns: list, extractor: Extractor) -> lis
     Returns
     -------
     list
-        A list containing the closest callsign match and its confidence (edit distance).
+        A list of the closest callsign matches and their confidence (edit distance).
+        If multiple callsigns have the same minimum edit distance, all of them will be returned.
     """
-    callsigns = []
-    for item in extracted_callsigns:
-        callsigns.append(extractor.reference_area_info(item))
-
-    callsign = ""
+    closest_callsigns = []
     min_distance = float('inf')
-    for item in callsigns:
-        if item[1] < min_distance:
-            min_distance = item[1]
-            callsign = item[0]
 
-    return [callsign, min_distance]
+    for extracted_callsign in extracted_callsigns:
+        matches = extractor.reference_area_info(extracted_callsign)
+        for match in matches:
+            if match[1] < min_distance:
+                min_distance = match[1]
+                closest_callsigns = [match]
+            elif match[1] == min_distance:
+                closest_callsigns.append(match)
+
+    return closest_callsigns

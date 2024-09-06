@@ -31,7 +31,7 @@ class Extractor:
     
     def reference_area_info(self, extracted_callsign: str) -> list:
         """
-        Find the closest callsign match from the known area information.
+        Find the closest callsign matches from the known area information.
 
         Parameters
         ----------
@@ -41,10 +41,13 @@ class Extractor:
         Returns
         -------
         list
-            A list containing the closest callsign match and its edit distance.
+            A list of lists containing the closest callsign matches and their edit distance.
+            If min_distance == 0, the list will contain one entry [[closest_callsign, min_distance]].
+            If min_distance > 0, the list will contain all matches with the same min_distance.
         """
         min_distance: int = 128
-        closest_callsign = ""
+        closest_callsigns = []
+
         for area_callsign in self.area_info:
             # Extract alphabetic part
             area_alpha_part = ''.join(filter(str.isalpha, area_callsign))
@@ -53,13 +56,16 @@ class Extractor:
             # Check if alphabetic parts match
             if area_alpha_part != extracted_alpha_part:
                 continue
-                
+
             # Calculate edit distance for numeric parts
             area_num_part = ''.join(filter(str.isdigit, area_callsign))
             extracted_num_part = ''.join(filter(str.isdigit, extracted_callsign))
             d = distance(extracted_num_part, area_num_part)
+
             if d < min_distance:
                 min_distance = d
-                closest_callsign = area_callsign
+                closest_callsigns = [[area_callsign, d]]
+            elif d == min_distance:
+                closest_callsigns.append([area_callsign, d])
 
-        return [closest_callsign, min_distance]
+        return closest_callsigns

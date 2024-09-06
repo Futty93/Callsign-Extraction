@@ -1,6 +1,6 @@
 import json
 import time
-from word_processing import replace_words_spell, extract_callsigns, get_closest_callsign
+from word_processing import replace_words_spell, extract_callsigns, get_closest_callsigns
 from sentence_formatter import format_sentence, word_combination_formatter
 from extractor import Extractor
 from restoration import Restoration
@@ -35,11 +35,13 @@ def extraction_flight_number(input_text: str) -> list:
     # print("4. ", extracted_callsigns)
 
     if extracted_callsigns:
-        closest_callsign = get_closest_callsign(extracted_callsigns, extractor)
-        if closest_callsign[1] < 2:
+        closest_callsigns = get_closest_callsigns(extracted_callsigns, extractor)
+        
+        # closest_callsigns が空でないか確認
+        if closest_callsigns and closest_callsigns[0][1] < 2:
             # end_time: float = time.time()
             # print(f"Execution time: {end_time - start_time} seconds")
-            return closest_callsign
+            return closest_callsigns
 
     # # スペルのみでの抽出テスト
     # # return ["Callsign is not Found", 128]
@@ -60,11 +62,13 @@ def extraction_flight_number(input_text: str) -> list:
 
 
     if extracted_callsigns:
-        closest_callsign = get_closest_callsign(extracted_callsigns, extractor)
-        if closest_callsign[1] < 2:
+        closest_callsigns = get_closest_callsigns(extracted_callsigns, extractor)
+        
+        # closest_callsigns が空でないか確認
+        if closest_callsigns and closest_callsigns[0][1] < 2:
             # end_time: float = time.time()
             # print(f"Execution time: {end_time - start_time} seconds")
-            return closest_callsign
+            return closest_callsigns
         
     # 1回目の音声符号化のみでの抽出テスト
     # return ["Callsign is not Found", 128]
@@ -95,11 +99,13 @@ def extraction_flight_number(input_text: str) -> list:
         extracted_callsigns += callsign_g2p_2
 
     if extracted_callsigns:
-        closest_callsign = get_closest_callsign(extracted_callsigns, extractor)
-        if closest_callsign[1] < 2:
+        closest_callsigns = get_closest_callsigns(extracted_callsigns, extractor)
+        
+        # 追加: closest_callsigns が空でないか確認
+        if closest_callsigns and closest_callsigns[0][1] < 2:
             # end_time: float = time.time()
             # print(f"Execution time: {end_time - start_time} seconds")
-            return closest_callsign
+            return closest_callsigns
     
     # end_time: float = time.time()
     # print(f"Execution time: {end_time - start_time} seconds")

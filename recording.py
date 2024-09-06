@@ -4,7 +4,7 @@ import pyaudio
 import wave
 import time
 import keyboard
-from main import extraction_flight_number as main
+from main import extraction_flight_number as extractor
 
 def record(w):
     # 録音の設定
@@ -69,7 +69,7 @@ def record(w):
             result = w.transcribe(filepath)
             text = w.extract_text(result)
             print(text)
-            print(main(text[0]))
+            print(extractor(text[0]))
 
             # データ初期化
             data = []
