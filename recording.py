@@ -68,8 +68,10 @@ def record(w):
             
             result = w.transcribe(filepath)
             text = w.extract_text(result)
+            extracted_callsigns = extractor(text[0])
+            
             print(text)
-            print(extractor(text[0]))
+            print(extracted_callsigns)
 
             # データ初期化
             data = []

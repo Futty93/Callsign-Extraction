@@ -1,4 +1,4 @@
-from main import extraction_flight_number as main
+from main import extraction_flight_number as extractor
 import json
 import re
 
@@ -17,7 +17,7 @@ if __name__ == "__main__":
         else:
             callsign = "Callsign is not found"
             
-        extracted_callsign:list[str, int] = main(data[i]["transcript-result"])
+        extracted_callsign:list[str, int] = extractor(data[i]["transcript-result"])
         
         print(i)
 
