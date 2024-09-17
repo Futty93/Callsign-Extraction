@@ -1,11 +1,16 @@
 import json
 import re
 from Levenshtein import distance
+from API.get_area_info import get_callsigns_from_api
 
 class Extractor:
     def __init__(self):
+        # テスト用の空域情報の利用はこっち
         with open("area_info.json", 'r', encoding='utf-8') as f:
             self.area_info = json.load(f)
+        
+        # # Horusの空域情報の利用はこっち
+        # self.area_info = get_callsigns_from_api()
 
     def extract_pattern(self, sentence: str) -> list:
         """
