@@ -5,6 +5,7 @@ import wave
 import time
 import keyboard
 from main import extraction_flight_number as extractor
+from API.send_highlight_aircraft import highlight_aircrafts
 
 def record(w):
     # 録音の設定
@@ -17,6 +18,9 @@ def record(w):
 
     # 録音データ
     data = []
+    
+    # 抽出したコールサインを格納
+    extracted_callsigns = [['SKY514', 2]]
     
     print("Recording is available...")
 
@@ -49,6 +53,9 @@ def record(w):
             wf.setframerate(sample_rate)
 
             print("録音を開始しました...")
+            
+            highlight_aircrafts(extracted_callsigns, "NO_VALUE") # コールサインのハイライトをリセット
+            
 
         # 録音中
         if is_recording:
@@ -72,6 +79,8 @@ def record(w):
             
             print(text)
             print(extracted_callsigns)
+            
+            highlight_aircrafts(extracted_callsigns, "SUCCESS") # コールサインのハイライトを更新
 
             # データ初期化
             data = []
