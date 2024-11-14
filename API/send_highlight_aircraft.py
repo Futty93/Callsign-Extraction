@@ -43,6 +43,7 @@ def highlight_aircrafts(aircraft_data, callsign_status):
 
 # 使用例
 if __name__ == "__main__":
-  aircraft_data = [['ANA123', 1], ['SKY514', 0]]
-  highlight_aircrafts(aircraft_data, "NO_VALUE") # コールサインのハイライトをリセット
-#   highlight_aircrafts(aircraft_data, "SUCCESS") # コールサインのハイライトを更新
+    aircraft_data = [['ANA123', 1], ['SKY514', 0]]
+    # aircraft_data = [['Callsign is not Found', 128]]
+    highlight_aircrafts(aircraft_data, "NO_VALUE") # コールサインのハイライトをリセット
+    # highlight_aircrafts(aircraft_data, "SUCCESS") # コールサインのハイライトを更新

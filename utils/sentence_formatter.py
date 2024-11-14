@@ -93,7 +93,7 @@ class SentenceFormatter:
         else:
             return modified_text
 
-    def word_combination_formatter(self, sentence: str) -> list[str, str]:
+    def word_combination_formatter(self, sentence: str) -> list[str]:
         """
         Format the given sentence by combining consecutive words, except for numbers.
 
@@ -104,38 +104,39 @@ class SentenceFormatter:
 
         Returns
         -------
-        list
+        list[str]
             A list containing two strings:
-                - The first string is the sentence with even-indexed words combined.
-                - The second string is the sentence with odd-indexed words combined.
+                - The first string combines words at even indexes.
+                - The second string combines words at odd indexes.
         """
-        word_list = sentence.split()
-        even_word_sentence = []
-        odd_word_sentence = []
+        words = sentence.split()
+        even_combined, odd_combined = [], []
 
-        for i in range(len(word_list)-1):
-            current_word = word_list[i]
-            next_word = word_list[i+1]
+        for i in range(len(words) - 1):
+            # 現在の単語と次の単語
+            current_word = words[i]
+            next_word = words[i + 1]
 
+            # 偶数インデックスの場合
             if i % 2 == 0:
+                even_combined.append(
+                    f"{current_word}{next_word}" if not (
+                                current_word.isdigit() or next_word.isdigit()) else current_word
+                )
                 if next_word.isdigit():
-                    even_word_sentence.extend([current_word, next_word])
-                elif current_word.isdigit():
-                    even_word_sentence.append(current_word)
-                else:
-                    even_word_sentence.append(current_word + next_word)
+                    even_combined.append(next_word)
+
+            # 奇数インデックスの場合
             else:
+                odd_combined.append(
+                    f"{current_word}{next_word}" if not (
+                                current_word.isdigit() or next_word.isdigit()) else current_word
+                )
                 if next_word.isdigit():
-                    odd_word_sentence.extend([current_word, next_word])
-                elif current_word.isdigit():
-                    odd_word_sentence.append(current_word)
-                else:
-                    odd_word_sentence.append(current_word + next_word)
+                    odd_combined.append(next_word)
 
-        even_word_sentence = ' '.join(even_word_sentence)
-        odd_word_sentence = ' '.join(odd_word_sentence)
-
-        return [even_word_sentence, odd_word_sentence]
+        # リストを結合して最終結果を返す
+        return [' '.join(even_combined), ' '.join(odd_combined)]
 
 def format_sentence(text: str) -> str:
     """
@@ -144,7 +145,7 @@ def format_sentence(text: str) -> str:
     formatter = SentenceFormatter()
     return formatter.format_sentence(text)
 
-def word_combination_formatter(sentence: str) -> list[str, str]:
+def word_combination_formatter(sentence: str) -> list[str]:
     """
     Wrapper function to call the word_combination_formatter method from the SentenceFormatter class.
     """

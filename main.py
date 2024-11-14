@@ -1,11 +1,9 @@
-import json
-import time
-from word_processing import replace_words_spell, extract_callsigns, get_closest_callsigns
-from sentence_formatter import format_sentence, word_combination_formatter
-from extractor import Extractor
-from restoration import Restoration
+from utils.word_processing import replace_words_spell, extract_callsigns, get_closest_callsigns
+from utils.sentence_formatter import format_sentence, word_combination_formatter
+from utils.extractor import Extractor
+from utils.restoration import Restoration
 
-def extraction_flight_number(input_text: str) -> list:
+def extraction_flight_number(input_text: str) -> list[str, int]:
     """
     Extract and identify the flight callsign from the transcribed ATC communication.
 
@@ -109,7 +107,7 @@ def extraction_flight_number(input_text: str) -> list:
     
     # end_time: float = time.time()
     # print(f"Execution time: {end_time - start_time} seconds")
-    return ["Callsign is not Found", 128]
+    return [["Callsign is not Found", 128]]
 
 if __name__ == '__main__':
     input_text: str = "I picked 903 bar decent and maintain 4200 feet clear for uploads."

@@ -1,4 +1,9 @@
 import json
+import os
+import json
+
+# スクリプトのディレクトリを基準にしてtranscript.jsonのパスを設定
+script_dir = os.path.dirname(os.path.abspath(__file__))
 
 class Restoration:
     def restoration_sentence(self, word_list: list, type: str) -> list:
@@ -19,7 +24,8 @@ class Restoration:
         """
         restored_sentence = []
 
-        with open(f'generated_json/word_{type}_dict.json', 'r', encoding='utf-8') as f:
+        word_type_dict_path = os.path.join(script_dir, f'../generated_json/word_{type}_dict.json')
+        with open(word_type_dict_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
 
         for word in word_list:
@@ -86,7 +92,8 @@ class Restoration:
             The sentence with callsigns replaced by 3-letter codes.
         """
         # Load the airline code dictionary from a JSON file
-        with open('registered_json/airline_code_dict.json', 'r', encoding='utf-8') as f:
+        airline_code_dict_path = os.path.join(script_dir, '../registered_json/airline_code_dict.json')
+        with open(airline_code_dict_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
 
         restored_sentence = []

@@ -1,4 +1,4 @@
-import whisper
+# import whisper
 from whispercpp import Whisper
 import pyaudio
 import wave
@@ -6,9 +6,20 @@ import time
 import keyboard
 from main import extraction_flight_number as extractor
 from API.send_highlight_aircraft import highlight_aircrafts
+import os
+import json
 
 def record(w):
+    # transcription_results.jsonの読み込み
+    results_filepath = "./record_files/transcription_results.json"
+    if os.path.exists(results_filepath):
+        with open(results_filepath, 'r', encoding='utf-8') as f:
+            results = json.load(f)
+    else:
+        results = []
+
     # 録音の設定
+    global stream, filepath, start_time, wf, filename
     chunk = 1024  # 1度に読み込むデータ量
     sample_rate = 44100  # サンプリングレート
     channels = 1  # チャンネル数
@@ -72,15 +83,33 @@ def record(w):
             wf.close()
 
             print(f"録音を終了しました。録音時間: {recording_time:.2f}秒")
-            
+
             result = w.transcribe(filepath)
             text = w.extract_text(result)
-            extracted_callsigns = extractor(text[0])
-            
             print(text)
+
+            # 短いテキストの場合は処理をスキップしてファイルを削除
+            if len(text[0]) <= 10 or text[0][1] == "[":
+                print(f"{filename} is too short, skipping and deleting file.")
+                os.remove(filepath)
+                continue
+
+            extracted_callsigns = extractor(text[0])
+
             print(extracted_callsigns)
-            
-            highlight_aircrafts(extracted_callsigns, "SUCCESS") # コールサインのハイライトを更新
+
+            # transcription_results.jsonにデータを追加
+            results.append({
+                "file_name": filename,
+                "transcription": text,
+                "extracted_callsign": extracted_callsigns
+            })
+
+            # JSONファイルの更新
+            with open(results_filepath, 'w', encoding='utf-8') as f:
+                json.dump(results, f, ensure_ascii=False, indent=4)
+
+            highlight_aircrafts(extracted_callsigns, "SUCCESS")  # コールサインのハイライトを更新
 
             # データ初期化
             data = []

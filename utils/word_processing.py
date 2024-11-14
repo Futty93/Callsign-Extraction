@@ -1,14 +1,20 @@
 import json
-from Levenshtein import distance
+from utils.levenshtein import distance
 # from levenshtein import restricted_distance as distance
-from g2p import G2PClass
-from metaphone import MetaphoneClass
-from restoration import Restoration
-from extractor import Extractor
+from utils.g2p import G2PClass
+from utils.metaphone import MetaphoneClass
+from utils.restoration import Restoration
+from utils.extractor import Extractor
+import os
+import json
+
+# スクリプトのディレクトリを基準にしてtranscript.jsonのパスを設定
+script_dir = os.path.dirname(os.path.abspath(__file__))
+word_register_path = os.path.join(script_dir, "../registered_json/word_register.json")
 
 class WordReplacement:
     def __init__(self):
-        with open('registered_json/word_register.json', 'r') as f:
+        with open(word_register_path, 'r') as f:
             self.register_word_list = json.load(f)
 
     def replace_words_spell(self, sentence: str) -> list:
@@ -49,7 +55,7 @@ class WordReplacement:
 
         return replaced_words
 
-    def replace_words_metaphone(word_list: list[str]) -> list:
+    def replace_words_metaphone(self, word_list: list[str]) -> list:
         """
         与えられた単語のmetaphone keyの配列に対して、./generated_json/word_metaphone_key.jsonに登録されている
         単語との距離を計算し、最も近い単語に置き換える。
@@ -67,14 +73,15 @@ class WordReplacement:
         """
 
         # JSONファイルから単語とそれに対応するメタフォンキーを読み込む
-        with open('./generated_json/word_metaphone_list.json', 'r') as f:
+        word_metaphone_list_path = os.path.join(script_dir, "../generated_json/word_metaphone_list.json")
+        with open(word_metaphone_list_path, 'r') as f:
             register_metaphone_list = json.load(f)
 
         replaced_words: list[str] = []
 
         # 各単語に対してループを実行し、最も近い単語に置き換える
         for word in word_list:
-            if isinstance(word, list) == False:
+            if not isinstance(word, list):
                 replaced_words.append(word)
                 continue
             min_distance = float('inf')
@@ -94,7 +101,7 @@ class WordReplacement:
 
         return replaced_words
 
-    def replace_words_g2p(word_list: list[str]) -> list:
+    def replace_words_g2p(self, word_list: list[str]) -> list:
         """
         与えられたg2p化された単語の配列に対してそれぞれ登録されている単語のg2pと距離を計算し、最も近い単語に置き換えた配列を返す
 
@@ -110,13 +117,14 @@ class WordReplacement:
                 単語の距離が一定以上ある場合は単語をそのまま返す
         """
         # JSONファイルから登録されている単語のg2pを読み込む
-        with open('./generated_json/word_g2p_list.json', 'r') as f:
+        word_g2p_list_path = os.path.join(script_dir, "../generated_json/word_g2p_list.json")
+        with open(word_g2p_list_path, 'r') as f:
             register_g2p_list = json.load(f)
 
         replaced_words: list[str] = []
         # 各単語に対してループを実行し、最も近い単語に置き換える
         for word in word_list:
-            if isinstance(word, list) == False:
+            if not isinstance(word, list):
                 replaced_words.append(word)
                 continue
             min_distance = float('inf')
@@ -161,10 +169,10 @@ def extract_callsigns(sentence: str, processing_type: str) -> list:
     """
     if processing_type == "metaphone":
         key_array = MetaphoneClass().generate_metaphone_key_list(sentence)
-        replaced_array = WordReplacement.replace_words_metaphone(key_array)
+        replaced_array = WordReplacement().replace_words_metaphone(key_array)
     elif processing_type == "g2p":
         key_array = G2PClass().generate_g2p_list(sentence)
-        replaced_array = WordReplacement.replace_words_g2p(key_array)
+        replaced_array = WordReplacement().replace_words_g2p(key_array)
     else:
         raise ValueError("Invalid processing_type. Must be 'metaphone' or 'g2p'.")
 
