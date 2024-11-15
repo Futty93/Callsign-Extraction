@@ -1,4 +1,7 @@
 from g2p_en import G2p
+import nltk
+
+nltk.download('averaged_perceptron_tagger_eng')
 
 class G2PClass:
     def __init__(self):
