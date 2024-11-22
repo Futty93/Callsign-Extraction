@@ -72,10 +72,8 @@ class SentenceFormatter:
         # ハイフンをスペースに置換
         text = text.replace('-', ' ')
 
-        # 数字と数字が連続している場合のスペースを削除する正規表現パターン
+        # 数字と数字が連続している場合のスペースを削除
         pattern = re.compile(r'(\d+)\s+(\d+)')
-
-        # パターンにマッチする箇所を探し、間のスペースを削除する
         modified_text = re.sub(pattern, r'\1\2', text)
 
         modified_text_list = modified_text.split()
@@ -110,7 +108,7 @@ class SentenceFormatter:
                 - The second string combines words at odd indexes.
         """
         words = sentence.split()
-        even_combined, odd_combined = [], []
+        even_combined, odd_combined = [], [words[0]]
 
         for i in range(len(words) - 1):
             # 現在の単語と次の単語
@@ -135,6 +133,9 @@ class SentenceFormatter:
                 if next_word.isdigit():
                     odd_combined.append(next_word)
 
+        if len(words) % 2 == 1:
+            even_combined.append(words[-1])
+
         # リストを結合して最終結果を返す
         return [' '.join(even_combined), ' '.join(odd_combined)]
 
@@ -151,3 +152,6 @@ def word_combination_formatter(sentence: str) -> list[str]:
     """
     formatter = SentenceFormatter()
     return formatter.word_combination_formatter(sentence)
+
+if __name__ == '__main__':
+    print(word_combination_formatter("Morning phone 133 Hold position Traffic from final approach"))

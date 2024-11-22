@@ -1,9 +1,11 @@
+from typing import List
+
 from utils.word_processing import replace_words_spell, extract_callsigns, get_closest_callsigns
 from utils.sentence_formatter import format_sentence, word_combination_formatter
 from utils.extractor import Extractor
 from utils.restoration import Restoration
 
-def extraction_flight_number(input_text: str) -> list[str, int]:
+def extraction_flight_number(input_text: str) -> list | list[list[str | int]]:
     """
     Extract and identify the flight callsign from the transcribed ATC communication.
 
@@ -20,17 +22,17 @@ def extraction_flight_number(input_text: str) -> list[str, int]:
     """
     # start_time: float = time.time()
     
-    formatted_text = format_sentence(input_text)
+    formatted_text = format_sentence(input_text.lower())
     extractor = Extractor()
 
     replaced_array = replace_words_spell(formatted_text)
-    # print("1. ", replaced_array)
+    print("1. ", replaced_array)
     restoration_sentence = [word[0] if isinstance(word, list) else word for word in replaced_array]
-    # print("2. ", restoration_sentence)
-    restoration_callsign = Restoration().restoration_callSign(restoration_sentence)
-    # print("3. ", restoration_callsign)
+    print("2. ", restoration_sentence)
+    restoration_callsign = Restoration().restoration_callsign(restoration_sentence)
+    print("3. ", restoration_callsign)
     extracted_callsigns = extractor.extract_pattern(restoration_callsign)
-    # print("4. ", extracted_callsigns)
+    print("4. ", extracted_callsigns)
 
     if extracted_callsigns:
         closest_callsigns = get_closest_callsigns(extracted_callsigns, extractor)
@@ -42,7 +44,7 @@ def extraction_flight_number(input_text: str) -> list[str, int]:
             return closest_callsigns
 
     # # スペルのみでの抽出テスト
-    # # return ["Callsign is not Found", 128]
+    # return [["Callsign is not Found", 128]]
 
     callsign_metaphone = extract_callsigns(formatted_text, "metaphone")
     callsign_g2p = extract_callsigns(formatted_text, "g2p")
@@ -68,8 +70,8 @@ def extraction_flight_number(input_text: str) -> list[str, int]:
             # print(f"Execution time: {end_time - start_time} seconds")
             return closest_callsigns
         
-    # 1回目の音声符号化のみでの抽出テスト
-    # return ["Callsign is not Found", 128]
+    # # 1回目の音声符号化のみでの抽出テスト
+    # return [["Callsign is not Found", 128]]
 
     extra_formated_text = word_combination_formatter(formatted_text)
 
@@ -110,5 +112,5 @@ def extraction_flight_number(input_text: str) -> list[str, int]:
     return [["Callsign is not Found", 128]]
 
 if __name__ == '__main__':
-    input_text: str = "I picked 903 bar decent and maintain 4200 feet clear for uploads."
+    input_text: str = "Amaxa air 240 request further climb to flight level 410."
     print(extraction_flight_number(input_text))

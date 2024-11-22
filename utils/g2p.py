@@ -50,3 +50,6 @@ class G2PClass:
                 word_g2p_list.append([self.generate_g2p(word), word])
 
         return word_g2p_list
+
+if __name__ == '__main__':
+    print(G2PClass().generate_g2p_list("amaxa"))

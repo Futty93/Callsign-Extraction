@@ -77,7 +77,7 @@ class Restoration:
         else:
             return word_list
 
-    def restoration_callSign(self, word_list: list) -> str:
+    def restoration_callsign(self, word_list: list) -> str:
         """
         Restore callsigns in the given word list by replacing them with 3-letter codes.
 
@@ -93,48 +93,42 @@ class Restoration:
         """
         # Load the airline code dictionary from a JSON file
         airline_code_dict_path = os.path.join(script_dir, '../registered_json/airline_code_dict.json')
-        with open(airline_code_dict_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
+        with open(airline_code_dict_path, 'r', encoding='utf-8') as file:
+            airline_codes = json.load(file)
 
         restored_sentence = []
+        index = 0
 
-        i: int = 0
-        # Iterate over the word list
-        while i < len(word_list) - 1:
-            # Get the current word and the next word
-            word = self.get_first_element(word_list[i])
-            next_word = self.get_first_element(word_list[i + 1])
-            joined_word = word + " " + next_word
+        while index < len(word_list) - 1:
+            # Get current and next words
+            current_word = self.get_first_element(word_list[index])
+            next_word = self.get_first_element(word_list[index + 1])
+            combined_word = f"{current_word} {next_word}"
 
-            # Check if the current word is in the airline code dictionary
-            if word in data:
-                # If the next word is a number, assume it's part of the callsign and replace with the code
-                if i + 1 < len(word_list) and word_list[i + 1][0].isdigit():
-                    restored_sentence.append(data[word])
+            if current_word in airline_codes:
+                if index + 1 < len(word_list) and word_list[index + 1][0].isdigit():
+                    # Replace current word with code if followed by a number
+                    restored_sentence.append(airline_codes[current_word])
                 else:
-                    # If the next word is not a number, append the original word (not replaced)
-                    restored_sentence.append(self.get_second_element(word_list[i]))
-                i += 1
-            # Check if the combination of current and next word is in the airline code dictionary
-            elif joined_word in data:
-                # If the next word after the next one is a number, assume it's part of the callsign and replace with the code
-                if i + 2 < len(word_list) and word_list[i + 2][0].isdigit():
-                    restored_sentence.append(data[joined_word])
-                    i += 2
+                    # Append the original word if not followed by a number
+                    restored_sentence.append(self.get_second_element(word_list[index]))
+                index += 1
+            elif combined_word in airline_codes:
+                if index + 2 < len(word_list) and word_list[index + 2][0].isdigit():
+                    # Replace combined word with code if followed by a number
+                    restored_sentence.append(airline_codes[combined_word])
+                    index += 2
                 else:
-                    # If the next word after the next one is not a number, append the original word (not replaced)
-                    restored_sentence.append(self.get_second_element(word_list[i]))
-                    i += 1
+                    # Append the original word if not followed by a number
+                    restored_sentence.append(self.get_second_element(word_list[index]))
+                    index += 1
             else:
-                # If the current word or the combination of current and next word is not in the dictionary,
-                # append the original word (not replaced)
-                restored_sentence.append(self.get_second_element(word_list[i]))
-                i += 1
+                # Append the original word if no match in dictionary
+                restored_sentence.append(self.get_second_element(word_list[index]))
+                index += 1
 
-        # Append the last word in the word list (not replaced)
-        restored_sentence.append(self.get_second_element(word_list[len(word_list) - 1]))
+        # Handle the last word
+        if index == len(word_list) - 1:
+            restored_sentence.append(self.get_second_element(word_list[index]))
 
-        # Join the restored words into a sentence
-        restored_sentence = ' '.join(restored_sentence)
-
-        return restored_sentence
+        return ' '.join(restored_sentence)

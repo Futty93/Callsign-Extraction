@@ -29,6 +29,7 @@ if __name__ == "__main__":
         extracted_callsigns:list[str, int] = extractor(data[i]["transcript-result"])
         
         print(i)
+        print(extracted_callsigns)
 
         if any(extracted_callsign[0] == callsign for extracted_callsign in extracted_callsigns):
             count += 1

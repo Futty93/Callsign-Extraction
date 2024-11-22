@@ -17,7 +17,9 @@
     "ARNJLNR": "orange liner",
     "ARNJ": "orange",
     "LNR": "liner",
-    "JPNTRNSSN": "japan transocean",
+    "JSN": "j ocean",
+    "J": "j",
+    "ASN": "ocean",
     "TRNSSN": "transocean",
     "NPNKRK": "nippon cargo",
     "KRK": "cargo",
@@ -31,5 +33,6 @@
     "JSPRNK": "j spring",
     "SPRNK": "spring",
     "AMKSR": "amakusa air",
-    "AMKS": "amakusa"
+    "AMKS": "amakusa",
+    "KMTR": "commuter"
 }
