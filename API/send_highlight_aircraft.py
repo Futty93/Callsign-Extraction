@@ -14,7 +14,10 @@ def highlight_aircrafts(aircraft_data, callsign_status):
     if callsign_status == "SUCCESS":
         
         if aircraft_data[0][0] == "Callsign is not Found":
-            callsign_status = "FAILURE"
+            if aircraft_data[0][1]:
+                callsign_status = "CALLSIGN_NOT_FOUND"
+            else:
+                callsign_status = "FAILURE"
         
         for data in aircraft_data:
             callsign = data[0]

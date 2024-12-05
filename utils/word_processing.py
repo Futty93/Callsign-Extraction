@@ -50,7 +50,7 @@ class WordReplacement:
 
             # if len(word)*2/3 > min_distance:
             if max(len(word), len(closest_word)) * 2 / 3 > min_distance:
-                replaced_words.append([closest_word, min_distance])
+                replaced_words.append([closest_word, word])
             else:
                 replaced_words.append(word)
 
@@ -175,16 +175,18 @@ def extract_callsigns(sentence: str, processing_type: str) -> list:
         replaced_array = WordReplacement().replace_words_metaphone(key_array)
     elif processing_type == "g2p":
         key_array = G2PClass().generate_g2p_list(sentence)
+        # print(key_array)
         replaced_array = WordReplacement().replace_words_g2p(key_array)
+        # print(replaced_array)
     else:
         raise ValueError("Invalid processing_type. Must be 'metaphone' or 'g2p'.")
 
     restoration_sentence = Restoration().restoration_sentence(replaced_array, processing_type)
-    print(processing_type, "1: ", restoration_sentence)
+    # print(processing_type, "1: ", restoration_sentence)
     restoration_callsign = Restoration().restoration_callsign(restoration_sentence)
-    print(processing_type, "2: ", restoration_callsign)
+    # print(processing_type, "2: ", restoration_callsign)
     callsign = Extractor().extract_pattern(restoration_callsign)
-    print(processing_type, "3: ", callsign)
+    # print(processing_type, "3: ", callsign)
 
     return callsign
 

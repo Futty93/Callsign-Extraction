@@ -18,7 +18,7 @@ class Extractor:
         # # Horusの空域情報の利用はこっち
         # self.area_info = get_callsigns_from_api()
 
-    def extract_pattern(self, sentence: str) -> list:
+    def extract_pattern(self, sentence: str) -> list | bool:
         """
         Extract callsign patterns from the given sentence.
 

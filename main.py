@@ -20,23 +20,28 @@ def extraction_flight_number(input_text: str) -> list | list[list[str | int]]:
         A list containing the closest callsign match and its confidence (edit distance).
         If no callsign is found, it returns ["Callsign is not Found", 128].
     """
+    is_callsign_found: bool = False
+
     # start_time: float = time.time()
     
     formatted_text = format_sentence(input_text.lower())
     extractor = Extractor()
 
+    # print(formatted_text)
+
     replaced_array = replace_words_spell(formatted_text)
-    print("1. ", replaced_array)
-    restoration_sentence = [word[0] if isinstance(word, list) else word for word in replaced_array]
-    print("2. ", restoration_sentence)
-    restoration_callsign = Restoration().restoration_callsign(restoration_sentence)
-    print("3. ", restoration_callsign)
+    # print("1. ", replaced_array)
+    # restoration_sentence = [word[0] if isinstance(word, list) else word for word in replaced_array]
+    # print("2. ", restoration_sentence)
+    restoration_callsign = Restoration().restoration_callsign(replaced_array)
+    # print("3. ", restoration_callsign)
     extracted_callsigns = extractor.extract_pattern(restoration_callsign)
-    print("4. ", extracted_callsigns)
+    # print("4. ", extracted_callsigns)
 
     if extracted_callsigns:
         closest_callsigns = get_closest_callsigns(extracted_callsigns, extractor)
-        
+        is_callsign_found = True
+
         # closest_callsigns が空でないか確認
         if closest_callsigns and closest_callsigns[0][1] < 2:
             # end_time: float = time.time()
@@ -63,6 +68,7 @@ def extraction_flight_number(input_text: str) -> list | list[list[str | int]]:
 
     if extracted_callsigns:
         closest_callsigns = get_closest_callsigns(extracted_callsigns, extractor)
+        is_callsign_found = True
         
         # closest_callsigns が空でないか確認
         if closest_callsigns and closest_callsigns[0][1] < 2:
@@ -71,7 +77,7 @@ def extraction_flight_number(input_text: str) -> list | list[list[str | int]]:
             return closest_callsigns
         
     # # 1回目の音声符号化のみでの抽出テスト
-    # return [["Callsign is not Found", 128]]
+    # return [["Callsign is not Found", is_callsign_found]]
 
     extra_formated_text = word_combination_formatter(formatted_text)
 
@@ -100,7 +106,8 @@ def extraction_flight_number(input_text: str) -> list | list[list[str | int]]:
 
     if extracted_callsigns:
         closest_callsigns = get_closest_callsigns(extracted_callsigns, extractor)
-        
+        is_callsign_found = True
+
         # 追加: closest_callsigns が空でないか確認
         if closest_callsigns and closest_callsigns[0][1] < 2:
             # end_time: float = time.time()
@@ -109,8 +116,8 @@ def extraction_flight_number(input_text: str) -> list | list[list[str | int]]:
     
     # end_time: float = time.time()
     # print(f"Execution time: {end_time - start_time} seconds")
-    return [["Callsign is not Found", 128]]
+    return [["Callsign is not Found", is_callsign_found]]
 
 if __name__ == '__main__':
-    input_text: str = "Amaxa air 240 request further climb to flight level 410."
+    input_text: str = "Amaxia 252 Proceeds to get through all of"
     print(extraction_flight_number(input_text))
