@@ -10,11 +10,11 @@ import os
 import json
 
 def record(w):
-    # # transcription_results.jsonの読み込み
-    # results_filepath = "./record_files/transcription_results.json"
+    # transcription_results.jsonの読み込み
+    results_filepath = "./record_files/transcription_results.json"
 
-    # ATCの模擬スクリプト読み上げ用のディレクトリ
-    results_filepath = "./ATC_test_recording/transcription_results.json"
+    # # ATCの模擬スクリプト読み上げ用のディレクトリ
+    # results_filepath = "./ATC_test_recording/transcription_results.json"
 
     if os.path.exists(results_filepath):
         with open(results_filepath, 'r', encoding='utf-8') as f:

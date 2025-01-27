@@ -72,6 +72,9 @@ class SentenceFormatter:
         # ハイフンをスペースに置換
         text = text.replace('-', ' ')
 
+        # # すべての数字をテキストに変換
+        # text = text.replace('0', ' zero').replace('1', ' one').replace('2', ' two').replace('3', ' three').replace('4', ' four').replace('5', ' five').replace('6', ' six').replace('7', ' seven').replace('8', ' eight').replace('9', ' nine')
+
         # 数字と数字が連続している場合のスペースを削除
         pattern = re.compile(r'(\d+)\s+(\d+)')
         modified_text = re.sub(pattern, r'\1\2', text)
@@ -154,4 +157,5 @@ def word_combination_formatter(sentence: str) -> list[str]:
     return formatter.word_combination_formatter(sentence)
 
 if __name__ == '__main__':
-    print(word_combination_formatter("Morning phone 133 Hold position Traffic from final approach"))
+    print(format_sentence("Morning  phone 1 33  Hold position Traffic from final approach"))
+    print(word_combination_formatter("Morning  phone   133 Hold position Traffic from final approach"))

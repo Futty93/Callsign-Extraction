@@ -1,3 +1,5 @@
+import sys
+import os
 from main import extraction_flight_number as main
 import json
 import re
@@ -6,27 +8,45 @@ from whispercpp import Whisper
 
 w = Whisper('small')
 
+# プロジェクトのルートディレクトリをsys.pathに追加
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+sound_file_path = "../ATC_test_recording/transcription_results.json"
+
+transcript_path = "../../修論/ATC_text_R.json"
+
+from main import extraction_flight_number as extractor
+import json
+import re
+
 if __name__ == "__main__":
-    with open("../transcript.json", 'r', encoding='utf-8') as f:
+    with open(transcript_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
+
+    with open(sound_file_path, 'r', encoding='utf-8') as f:
+        sound_data = json.load(f)
 
     pattern = r'\b([A-Z]{3})(\d+)\b'  # AAA111 のパターン
     count = 0
-    RANGE = 159 # sound fileの番号
+    RANGE = len(data)
+    print(RANGE)
+    # sound fileの番号
     count_1 = 0
     count_2 = 0
     count_3 = 0
     count_4 = 0
     count_5 = 0
-
-    for i in range(RANGE + 1):
-        match = re.search(pattern, data[i]["text"])
+    
+    for i in range(RANGE):
+        match = re.search(pattern, data[i]["instruction"])
+        soundfile = sound_data[i]["file_name"]
         if match:
             callsign = match.group(0)
         else:
             callsign = "Callsign is not found"
 
-        result = w.transcribe(f"../../音源ファイル/soundFiles/{data[i]['sound-file']}")
+        result = w.transcribe(f"../ATC_test_recording/{soundfile}")
 
         text = w.extract_text(result)
 
@@ -73,7 +93,7 @@ if __name__ == "__main__":
                 count_5 += 1
             print("False!!")
             print(callsign, extracted_callsigns)
-            print(data[i]["text"])
+            print(data[i]["instruction"])
             print(text[0])
 
     success_rate = count / (RANGE + 1)

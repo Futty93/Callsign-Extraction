@@ -182,11 +182,11 @@ def extract_callsigns(sentence: str, processing_type: str) -> list:
         raise ValueError("Invalid processing_type. Must be 'metaphone' or 'g2p'.")
 
     restoration_sentence = Restoration().restoration_sentence(replaced_array, processing_type)
-    # print(processing_type, "1: ", restoration_sentence)
+    print(processing_type, "1: ", restoration_sentence)
     restoration_callsign = Restoration().restoration_callsign(restoration_sentence)
-    # print(processing_type, "2: ", restoration_callsign)
+    print(processing_type, "2: ", restoration_callsign)
     callsign = Extractor().extract_pattern(restoration_callsign)
-    # print(processing_type, "3: ", callsign)
+    print(processing_type, "3: ", callsign)
 
     return callsign
 
@@ -212,11 +212,14 @@ def get_closest_callsigns(extracted_callsigns: list, extractor: Extractor) -> li
 
     for extracted_callsign in extracted_callsigns:
         matches = extractor.reference_area_info(extracted_callsign)
-        for match in matches:
-            if match[1] < min_distance:
-                min_distance = match[1]
-                closest_callsigns = [match]
-            elif match[1] == min_distance:
-                closest_callsigns.append(match)
+        # for match in matches:
+        #     if match[1] < min_distance:
+        #         min_distance = match[1]
+        #         closest_callsigns = [match]
+        #     elif match[1] == min_distance:
+        #         closest_callsigns.append(match)
+
+        if matches:
+            closest_callsigns += matches
 
     return closest_callsigns

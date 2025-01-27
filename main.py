@@ -65,12 +65,12 @@ def extraction_flight_number(input_text: str) -> list | list[list[str | int]]:
     else:
         extracted_callsigns = []
 
-
     if extracted_callsigns:
         closest_callsigns = get_closest_callsigns(extracted_callsigns, extractor)
         is_callsign_found = True
         
         # closest_callsigns が空でないか確認
+        print(closest_callsigns)
         if closest_callsigns and closest_callsigns[0][1] < 2:
             # end_time: float = time.time()
             # print(f"Execution time: {end_time - start_time} seconds")
@@ -86,7 +86,7 @@ def extraction_flight_number(input_text: str) -> list | list[list[str | int]]:
     callsign_g2p_1 = extract_callsigns(extra_formated_text[0], "g2p")
     callsign_g2p_2 = extract_callsigns(extra_formated_text[1], "g2p")
     
-    extracted_callsigns:list = []
+    extracted_callsigns: list = []
 
     # callsign_metaphone_1 と callsign_metaphone_2 の値を検証して、抽出したコールサインのリストを作成する
     if callsign_metaphone_1 and callsign_metaphone_2:
@@ -119,5 +119,5 @@ def extraction_flight_number(input_text: str) -> list | list[list[str | int]]:
     return [["Callsign is not Found", is_callsign_found]]
 
 if __name__ == '__main__':
-    input_text: str = "Amaxia 252 Proceeds to get through all of"
+    input_text: str = "Fujitori M657, maintain heading 210 until reach flight level 300."
     print(extraction_flight_number(input_text))

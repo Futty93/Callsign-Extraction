@@ -52,4 +52,12 @@ class G2PClass:
         return word_g2p_list
 
 if __name__ == '__main__':
-    print(G2PClass().generate_g2p_list("amaxa"))
+    print(G2PClass().generate_g2p_list("Ski work 113, combat~"))
+    print(G2PClass().generate_g2p_list("amakusa air"))
+    print(G2PClass().generate_g2p_list("amakusaair"))
+    print(G2PClass().generate_g2p_list("AMKSAR"))
+
+    # [['AH0MAE1KSIY0AH0', 'amaxia']]
+    # [['AA0MAA0KUW1SAH0', 'amakusa'], ['EH1R', 'air']]
+    # [['AE2MAH0KAH0WEH1SKIY0', 'amakusaair']]
+    # [['AE1MAH0KAH2SKER0', 'amakuser']]

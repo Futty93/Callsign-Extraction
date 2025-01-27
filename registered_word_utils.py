@@ -36,6 +36,18 @@ class GenerateJsonDataClass:
             metaphone_key = metaphone_key.decode('utf-8') if isinstance(metaphone_key, bytes) else metaphone_key # metaphoneが謎の型で返ってくるのでstrに変換
             word_metaphone_dict[metaphone_key] = word
             word_metaphone_key.append(metaphone_key)
+            multiple_words: list[str] = word.split()
+            # 2つの単語からなり、かつ2つ目の単語が母音から始まる場合には、結合したものも登録
+            if len(multiple_words) >= 2:
+                if self._is_vowel(multiple_words[1][0]):
+                    if self._is_vowel(multiple_words[0][-1]):
+                        multiple_word: str = multiple_words[0][:-1] + multiple_words[1]
+                    else:
+                        multiple_word: str = multiple_words[0] + multiple_words[1]
+                    metaphone_key = doublemetaphone(multiple_word)[0]
+                    metaphone_key = metaphone_key.decode('utf-8') if isinstance(metaphone_key, bytes) else metaphone_key
+                    word_metaphone_dict[metaphone_key] = word
+                    word_metaphone_key.append(metaphone_key)
 
         # 結果を新しいJSONファイルに書き込む
         with open(output_dict_file, 'w', encoding='utf-8') as f:
@@ -72,6 +84,17 @@ class GenerateJsonDataClass:
             g2p_key = self.g2p.generate_g2p(word)
             word_g2p_dict[g2p_key] = word
             word_g2p_list.append(g2p_key)
+            multiple_words: list[str] = word.split()
+            # 2つの単語からなり、かつ2つ目の単語が母音から始まる場合には、結合したものも登録
+            if len(multiple_words) >= 2:
+                if self._is_vowel(multiple_words[1][0]):
+                    if self._is_vowel(multiple_words[0][-1]):
+                        multiple_word: str = multiple_words[0][:-1] + multiple_words[1]
+                    else:
+                        multiple_word: str = multiple_words[0] + multiple_words[1]
+                    g2p_key = self.g2p.generate_g2p(multiple_word)
+                    word_g2p_dict[g2p_key] = word
+                    word_g2p_list.append(g2p_key)
 
         # 結果を新しいJSONファイルに書き込む
         with open(output_dict_file, 'w', encoding='utf-8') as f:
@@ -79,6 +102,11 @@ class GenerateJsonDataClass:
 
         with open(output_list_file, 'w', encoding='utf-8') as f:
             json.dump(word_g2p_list, f, indent=4, ensure_ascii=False)
+
+    @staticmethod
+    def _is_vowel(char: str) -> bool:
+        """文字が母音かどうかを判定"""
+        return char.lower() in 'aeiou'
 
 
 if __name__ == '__main__':

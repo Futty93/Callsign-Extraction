@@ -28,4 +28,12 @@ class MetaphoneClass:
         return word_metaphone_key_list
     
 if __name__ == '__main__':
-    print(MetaphoneClass().generate_metaphone_key_list("Morningphone"))
+    print(MetaphoneClass().generate_metaphone_key_list("amaxia"))
+    print(MetaphoneClass().generate_metaphone_key_list("amakusa air"))
+    print(MetaphoneClass().generate_metaphone_key_list("amakusaair"))
+    print(MetaphoneClass().generate_metaphone_key_list("amakuser"))
+
+    # [['AMKS', 'amaxia']]
+    # [['AMKS', 'amakusa'], ['AR', 'air']]
+    # [['AMKSR', 'amakusaair']]
+    # [['AMKSR', 'amakuser']]

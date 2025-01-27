@@ -77,7 +77,7 @@ class Restoration:
         else:
             return word_list
 
-    def restoration_callsign(self, word_list: list) -> str:
+    def restoration_callsign(self, word_list: list) -> list:
         """
         Restore callsigns in the given word list by replacing them with 3-letter codes.
 
@@ -108,7 +108,7 @@ class Restoration:
             if current_word in airline_codes:
                 if index + 1 < len(word_list) and word_list[index + 1][0].isdigit():
                     # Replace current word with code if followed by a number
-                    restored_sentence.append(airline_codes[current_word])
+                    restored_sentence.append((airline_codes[current_word], current_word))
                 else:
                     # Append the original word if not followed by a number
                     restored_sentence.append(self.get_second_element(word_list[index]))
@@ -116,7 +116,7 @@ class Restoration:
             elif combined_word in airline_codes:
                 if index + 2 < len(word_list) and word_list[index + 2][0].isdigit():
                     # Replace combined word with code if followed by a number
-                    restored_sentence.append(airline_codes[combined_word])
+                    restored_sentence.append((airline_codes[combined_word], combined_word))
                     index += 2
                 else:
                     # Append the original word if not followed by a number
@@ -131,4 +131,6 @@ class Restoration:
         if index == len(word_list) - 1:
             restored_sentence.append(self.get_second_element(word_list[index]))
 
-        return ' '.join(restored_sentence)
+        print("I'm here!!!", restored_sentence)
+
+        return restored_sentence
