@@ -5,9 +5,9 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-transcript_path = os.path.join(script_dir, "../transcript.json")
+transcript_path = os.path.join(script_dir, "./transcript.json")
 
-from main import extraction_flight_number as extractor
+from main import main as extractor
 import json
 import re
 

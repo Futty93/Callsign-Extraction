@@ -1,4 +1,4 @@
-from main import extraction_flight_number as main
+from main import main as main
 import json
 import re
 
@@ -7,7 +7,7 @@ from whispercpp import Whisper
 w = Whisper('small')
 
 if __name__ == "__main__":
-    with open("../transcript.json", 'r', encoding='utf-8') as f:
+    with open("transcript.json", 'r', encoding='utf-8') as f:
         data = json.load(f)
 
     pattern = r'\b([A-Z]{3})(\d+)\b'  # AAA111 のパターン

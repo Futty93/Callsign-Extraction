@@ -4,7 +4,7 @@ import pyaudio
 import wave
 import time
 import keyboard
-from main import extraction_flight_number as extractor
+from main import main as extractor
 from API.send_highlight_aircraft import highlight_aircrafts
 import os
 import json

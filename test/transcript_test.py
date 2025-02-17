@@ -1,4 +1,4 @@
-from main import extraction_flight_number as main
+from main import main as main
 import json
 import re
 

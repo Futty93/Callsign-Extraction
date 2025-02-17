@@ -1,6 +1,6 @@
 import sys
 import os
-from main import extraction_flight_number as main
+from main import main as main
 import json
 import re
 
@@ -14,7 +14,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 script_dir = os.path.dirname(os.path.abspath(__file__))
 transcript_path = "../../修論/ATC_text_0123.json"
 
-from main import extraction_flight_number as extractor
+from main import main as extractor
 import json
 import re
 

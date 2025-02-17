@@ -1,6 +1,6 @@
 import sys
 import os
-from main import extraction_flight_number as main
+from main import main as main
 import json
 import re
 
@@ -16,7 +16,7 @@ sound_file_path = "../ATC_test_recording/transcription_results.json"
 
 transcript_path = "../../修論/ATC_text_R.json"
 
-from main import extraction_flight_number as extractor
+from main import main as extractor
 import json
 import re
 
